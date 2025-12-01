@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply h-full;
+  }
+  
+  body {
+    @apply bg-rift-dark text-white antialiased;
+  }
+  
+  #__next {
+    @apply h-full flex flex-col;
+  }
+  
+  * {
+    @apply border-rift-emerald/30;
+  }
+}
+
+/* Modern scrollbar styling */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-modern {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(251, 191, 36, 0.3) transparent;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar-thumb {
+    background: rgba(251, 191, 36, 0.3);
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar-thumb:hover {
+    background: rgba(251, 191, 36, 0.5);
+  }
+  
+  /* Smooth scrolling */
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .rift-border {
+    @apply border border-rift-gold;
+  }
+  
+  .rift-button {
+    @apply bg-rift-gold hover:bg-yellow-500 text-rift-dark font-bold py-3 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+  
+  .rift-button-secondary {
+    @apply bg-transparent hover:bg-rift-card/50 text-white border border-rift-gold font-bold py-3 px-8 rounded-xl transition-all duration-200 backdrop-blur-sm;
+  }
+  
+  .rift-card {
+    @apply bg-gradient-to-br from-rift-card to-rift-royal border border-rift-emerald rounded-2xl shadow-xl;
+  }
+  
+  .rift-input {
+    @apply bg-rift-royal/50 backdrop-blur-sm text-white border border-rift-emerald/50 rounded-xl px-4 py-3 focus:border-rift-gold focus:ring-2 focus:ring-rift-gold/20 focus:outline-none transition-all;
+  }
+  
+  .rift-logo-text {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3), 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+  }
+}
+
