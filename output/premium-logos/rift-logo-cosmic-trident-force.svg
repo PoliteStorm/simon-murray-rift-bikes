@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <radialGradient id="cosmic-trid" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.5"/>
+            </radialGradient>
+        </defs>
+        <g transform="translate(50, 75)">
+            <line x1="50" y1="25" x2="50" y2="-20" stroke="url(#cosmic-trid)" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M50,-20 L38,-35 M50,-20 L50,-38 M50,-20 L62,-35" stroke="url(#cosmic-trid)" 
+                  stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="-20" r="8" fill="#fbbf24" opacity="0.9"/>
+        </g>
+        <text x="200" y="90" font-family="'DM Sans', sans-serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.13em">RIFT</text>
+        
+</svg>

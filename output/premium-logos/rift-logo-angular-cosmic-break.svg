@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <radialGradient id="ang-cos" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+            </radialGradient>
+        </defs>
+        <g transform="translate(50, 75)">
+            <path d="M0,0 L40,-15 L80,0 L120,15 L160,0" stroke="url(#ang-cos)" stroke-width="4.5" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <circle cx="40" cy="-15" r="5" fill="#fbbf24" opacity="0.9"/>
+        </g>
+        <text x="200" y="90" font-family="'Black Ops One', sans-serif" font-size="60" 
+              font-weight="400" fill="#ffffff" letter-spacing="0.15em">RIFT</text>
+        
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <linearGradient id="energy-tri" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#fbbf24"/>
+                <stop offset="100%" stop-color="#10b981"/>
+            </linearGradient>
+        </defs>
+        <g transform="translate(50, 75)">
+            <polygon points="0,20 50,-25 100,20" fill="none" stroke="url(#energy-tri)" 
+                     stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M50,-25 L50,-40" stroke="url(#energy-tri)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="-40" r="5" fill="#fbbf24" opacity="0.9"/>
+        </g>
+        <text x="200" y="90" font-family="'Anton', sans-serif" font-size="62" 
+              font-weight="400" fill="#ffffff" letter-spacing="0.18em">RIFT</text>
+        
+</svg>

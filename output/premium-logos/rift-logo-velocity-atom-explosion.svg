@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <radialGradient id="vel-atom" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+            </radialGradient>
+        </defs>
+        <g transform="translate(100, 75)">
+            <!-- Atom core -->
+            <circle cx="0" cy="0" r="11" fill="url(#vel-atom)"/>
+            <!-- Explosive velocity rays -->
+            <path d="M0,0 L50,-35 M0,0 L50,35 M0,0 L-20,-15 M0,0 L-20,15" 
+                  stroke="#fbbf24" stroke-width="4.5" stroke-linecap="round"/>
+            <!-- Speed direction forward -->
+            <path d="M50,-35 L70,-40 L90,-35" stroke="#fbbf24" stroke-width="3.5" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="M50,35 L70,40 L90,35" stroke="#fbbf24" stroke-width="3.5" 
+                  fill="none" stroke-linecap="round"/>
+            <!-- Motion particles -->
+            <circle cx="60" cy="-37" r="2.5" fill="#10b981" opacity="0.9"/>
+            <circle cx="60" cy="37" r="2.5" fill="#10b981" opacity="0.9"/>
+        </g>
+        <text x="200" y="90" font-family="'Kanit', sans-serif" font-size="54" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.15em">RIFT</text>
+        
+</svg>

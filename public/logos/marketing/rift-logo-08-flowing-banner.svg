@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        <rect width="1200" height="200" fill="#0f3d32"/>
+        <line x1="0" y1="195" x2="1200" y2="195" stroke="#fbbf24" stroke-width="5"/>
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(100, 50) scale(1.0)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 300 135.0
+            Q 300 124.16666666666666 300 91.66666666666666
+            Q 300 70 316.25 70
+            Q 330.3333333333333 70 330.3333333333333 86.25
+            Q 330.3333333333333 97.08333333333333 316.25 100.33333333333333
+            Q 305.4166666666667 100.33333333333333 305.4166666666667 107.91666666666666
+            Q 313.0 115.5 327.0833333333333 135.0
+        " stroke="#ffffff" stroke-width="3.7916666666666665" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 352.0 72.16666666666667
+            Q 352.0 102.5 352.0 135.0
+        " stroke="#ffffff" stroke-width="3.7916666666666665" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 373.66666666666663 135.0
+            Q 373.66666666666663 113.33333333333333 373.66666666666663 86.25
+            Q 373.66666666666663 70 388.8333333333333 70
+            Q 402.91666666666663 70 413.75 70
+            M 373.66666666666663 100.33333333333333
+            Q 381.25 99.25 395.3333333333333 100.33333333333333
+        " stroke="#ffffff" stroke-width="3.7916666666666665" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 424.5833333333333 73.25
+            Q 440.8333333333333 70 460.3333333333333 73.25
+            M 443.0 72.16666666666667
+            Q 443.0 102.5 443.0 135.0
+        " stroke="#ffffff" stroke-width="3.7916666666666665" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        
+        
+        <text x="850" y="120" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="16" 
+              fill="#fbbf24" text-anchor="middle" font-weight="300" letter-spacing="3">
+            CUSTOM BIKE SHOP
+        </text>
+        
+        
+</svg>

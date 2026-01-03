@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Horizon line breaking -->
+        <g transform="translate(50, 75)">
+            <!-- Main horizon line -->
+            <line x1="0" y1="0" x2="300" y2="0" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+            <!-- Breaking points with energy -->
+            <circle cx="100" cy="0" r="8" fill="#fbbf24" opacity="0.8"/>
+            <circle cx="200" cy="0" r="6" fill="#10b981" opacity="0.9"/>
+            <!-- Ascending elements (breaking through) -->
+            <path d="M100,0 L110,-15 L120,0" stroke="#fbbf24" stroke-width="2.5" fill="none"/>
+            <path d="M200,0 L210,-20 L220,0" stroke="#10b981" stroke-width="3" fill="none"/>
+            <!-- Subtle particles -->
+            <circle cx="150" cy="-10" r="2" fill="#fbbf24" opacity="0.6"/>
+            <circle cx="250" cy="-8" r="1.5" fill="#10b981" opacity="0.7"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="100" font-family="'Montserrat', sans-serif" font-size="50" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.08em">RIFT</text>
+        
+</svg>

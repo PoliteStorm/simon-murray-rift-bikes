@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        <rect width="300" height="400" fill="#0f3d32"/>
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(100, 50) scale(1.0)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 68.0 290.0 L 68.0 240.0
+            L 88.83333333333334 240.0 L 93.0 252.5
+            L 88.83333333333334 265.0 L 68.0 265.0
+            M 78.0 265.0 L 93.0 290.0
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="
+            M 109.66666666666667 240.0 L 109.66666666666667 290.0
+            M 101.33333333333334 240.0 L 118.0 240.0
+            M 101.33333333333334 290.0 L 118.0 290.0
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square"/>
+            <path d="
+            M 134.66666666666669 290.0 L 134.66666666666669 240.0
+            L 159.66666666666669 240.0
+            M 134.66666666666669 263.3333333333333 L 155.5 263.3333333333333
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square"/>
+            <path d="
+            M 172.16666666666669 240.0 L 205.5 240.0
+            M 188.83333333333334 240.0 L 188.83333333333334 290.0
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square"/>
+        </g>
+        
+        
+</svg>

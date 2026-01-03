@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Elegant serif design -->
+        <g transform="translate(30, 75)">
+            <!-- Subtle abstract element -->
+            <path d="M0,0 Q20,-15 40,0" stroke="#fbbf24" stroke-width="2" 
+                  fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M0,10 Q20,-5 40,10" stroke="#fbbf24" stroke-width="1.5" 
+                  fill="none" stroke-linecap="round" opacity="0.5"/>
+        </g>
+        <!-- RIFT text in elegant serif -->
+        <text x="200" y="90" font-family="'Playfair Display', serif" font-size="56" 
+              font-weight="700" fill="#fbbf24" letter-spacing="0.05em">RIFT</text>
+        
+</svg>

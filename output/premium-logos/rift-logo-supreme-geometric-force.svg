@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <linearGradient id="supreme-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fbbf24"/>
+                <stop offset="50%" stop-color="#10b981"/>
+                <stop offset="100%" stop-color="#fbbf24"/>
+            </linearGradient>
+            <radialGradient id="supreme-core" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+            </radialGradient>
+        </defs>
+        <g transform="translate(50, 75)">
+            <polygon points="0,20 50,-25 100,20" fill="none" stroke="url(#supreme-grad)" 
+                     stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter"/>
+            <circle cx="50" cy="-5" r="8" fill="url(#supreme-core)"/>
+            <path d="M50,-25 L50,-40" stroke="url(#supreme-grad)" stroke-width="4" stroke-linecap="square"/>
+            <path d="M50,-40 L40,-50 M50,-40 L60,-50" stroke="#fbbf24" 
+                  stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+        </g>
+        <text x="200" y="90" font-family="'Oswald', sans-serif" font-size="56" 
+              font-weight="600" fill="#ffffff" letter-spacing="0.15em">RIFT</text>
+        
+</svg>

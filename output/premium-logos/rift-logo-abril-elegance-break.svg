@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <g transform="translate(50, 75)">
+            <path d="M0,0 Q40,-18 80,0" stroke="#fbbf24" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+            <circle cx="40" cy="-9" r="5" fill="#10b981" opacity="0.9"/>
+        </g>
+        <text x="200" y="95" font-family="'Abril Fatface', serif" font-size="58" 
+              font-weight="400" fill="#fbbf24" letter-spacing="0.06em">RIFT</text>
+        
+</svg>

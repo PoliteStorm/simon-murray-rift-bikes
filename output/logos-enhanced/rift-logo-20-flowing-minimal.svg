@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 70" width="250" height="70">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(0, 0) scale(0.4)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#0d4d3f" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#0d4d3f" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#0d4d3f" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#0d4d3f" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#0d4d3f" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#0d4d3f" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 60 50.0
+            Q 60 45.0 60 30.0
+            Q 60 20 67.5 20
+            Q 74.0 20 74.0 27.5
+            Q 74.0 32.5 67.5 34.0
+            Q 62.5 34.0 62.5 37.5
+            Q 66.0 41.0 72.5 50.0
+        " stroke="#0d4d3f" stroke-width="1.75" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 84.0 21.0
+            Q 84.0 35.0 84.0 50.0
+        " stroke="#0d4d3f" stroke-width="1.75" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 94.0 50.0
+            Q 94.0 40.0 94.0 27.5
+            Q 94.0 20 101.0 20
+            Q 107.5 20 112.5 20
+            M 94.0 34.0
+            Q 97.5 33.5 104.0 34.0
+        " stroke="#0d4d3f" stroke-width="1.75" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 117.5 21.5
+            Q 125.0 20 134.0 21.5
+            M 126.0 21.0
+            Q 126.0 35.0 126.0 50.0
+        " stroke="#0d4d3f" stroke-width="1.75" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        
+        
+</svg>

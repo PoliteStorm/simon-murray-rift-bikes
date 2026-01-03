@@ -1,0 +1,41 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtle watermark version -->
+  <g opacity="0.6">
+    <g transform="translate(30, 30)">
+      <path d="M15 35 L85 35" stroke="#fbbf24" stroke-width="3" stroke-linecap="square" opacity="0.8"/>
+      <path d="M20 70 L80 70" stroke="#fbbf24" stroke-width="3" stroke-linecap="square" opacity="0.8"/>
+      <path d="M25 105 L75 105" stroke="#fbbf24" stroke-width="3" stroke-linecap="square" opacity="0.8"/>
+      <path d="M22 10 L25 35 M78 10 L75 35" stroke="#fbbf24" stroke-width="2" stroke-linecap="square" opacity="0.7"/>
+      <path d="M27 40 L30 70 M73 40 L70 70" stroke="#fbbf24" stroke-width="2" stroke-linecap="square" opacity="0.7"/>
+      <path d="M50 75 L53 105 M50 75 L47 105" stroke="#fbbf24" stroke-width="2" stroke-linecap="square" opacity="0.7"/>
+    </g>
+    <!-- Watermark Custom RIFT Typography -->
+    <g transform="translate(20, 140)" opacity="0.7">
+      <!-- R -->
+      <path d="M0 0 L0 35 L11 35 L16 30 L16 19 L11 14 L0 14 Z" fill="#ffffff"/>
+      <path d="M0 20 L11 20 L13 22 L11 35" fill="#ffffff"/>
+      <path d="M0 0 L0 35 L11 35 L16 30 L16 19 L11 14 L0 14 M0 20 L11 20 L13 22 L11 35" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="miter"/>
+      <path d="M2 16 L16 11" stroke="#10b981" stroke-width="0.6" opacity="0.5" stroke-linecap="square"/>
+      
+      <!-- I -->
+      <g transform="translate(23, 0)">
+        <path d="M0 0 L12 0 L12 8 L7 8 L7 27 L12 27 L12 35 L0 35 L0 27 L5 27 L5 8 L0 8 Z" fill="#ffffff"/>
+        <path d="M0 0 L12 0 L12 8 L7 8 L7 27 L12 27 L12 35 L0 35 L0 27 L5 27 L5 8 L0 8" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="miter"/>
+      </g>
+      
+      <!-- F -->
+      <g transform="translate(39, 0)">
+        <path d="M0 0 L0 35 L12 35 L12 27 L7 27 L7 20 L12 20 L12 12 L7 12 L7 0 Z" fill="#ffffff"/>
+        <path d="M0 0 L0 35 L12 35 L12 27 L7 27 L7 20 L12 20 L12 12 L7 12 L7 0" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="miter"/>
+        <path d="M2 12 L16 9" stroke="#10b981" stroke-width="0.6" opacity="0.5" stroke-linecap="square"/>
+      </g>
+      
+      <!-- T -->
+      <g transform="translate(55, 0)">
+        <path d="M0 0 L18 0 L18 8 L11 8 L11 35 L7 35 L7 8 L0 8 Z" fill="#ffffff"/>
+        <path d="M0 0 L18 0 L18 8 L11 8 L11 35 L7 35 L7 8 L0 8" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="miter"/>
+        <path d="M3 4 L15 4" stroke="#10b981" stroke-width="0.6" opacity="0.5" stroke-linecap="square"/>
+      </g>
+    </g>
+  </g>
+</svg>

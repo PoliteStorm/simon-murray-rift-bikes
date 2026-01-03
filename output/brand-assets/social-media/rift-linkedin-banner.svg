@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1128 191" width="1128" height="191">
+    
+    
+        <rect width="1128" height="191" fill="#0d4d3f"/>
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(100, 45) scale(0.8)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+        </g>
+        
+        <g>
+            <path d="M 300.0 130.0 L 300.0 80.0 L 320.8333333333333 80.0 L 325.0 92.5 L 320.8333333333333 105.0 L 300.0 105.0 Z M 310.0 105.0 L 325.0 130.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M 341.6666666666667 80.0 L 341.6666666666667 130.0 M 333.3333333333333 80.0 L 350.0 80.0 M 333.3333333333333 130.0 L 350.0 130.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+            <path d="M 366.6666666666667 130.0 L 366.6666666666667 80.0 L 391.6666666666667 80.0 M 366.6666666666667 103.33333333333334 L 387.5 103.33333333333334" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+            <path d="M 404.1666666666667 80.0 L 437.5 80.0 M 420.83333333333337 80.0 L 420.83333333333337 130.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+        </g>
+        
+        <text x="850" y="140" font-family="Arial, sans-serif" font-size="14" 
+              fill="#fbbf24" text-anchor="middle" font-weight="300" letter-spacing="2">
+            EDGE OF BIKING TECHNOLOGY
+        </text>
+        
+        
+</svg>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct SVG Test</title>
+    <style>
+        body { background: #333; padding: 20px; color: white; }
+        .test-box { background: white; padding: 20px; margin: 20px; display: inline-block; border: 2px solid #fbbf24; }
+        h2 { color: #fbbf24; }
+    </style>
+</head>
+<body>
+    <h1>SVG Display Test</h1>
+    
+    <h2>1. Icon Only (via img tag)</h2>
+    <div class="test-box">
+        <img src="logos/icon-only/rift-logo-icon-only.svg" alt="Icon" style="width: 200px; height: 200px;">
+    </div>
+    
+    <h2>2. Horizontal Logo (via img tag)</h2>
+    <div class="test-box">
+        <img src="logos/horizontal/rift-logo-horizontal-standard.svg" alt="Horizontal" style="width: 400px;">
+    </div>
+    
+    <h2>3. Embedded SVG (Icon Only)</h2>
+    <div class="test-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+            <rect width="200" height="200" fill="#0d4d3f"/>
+            <g transform="translate(50, 50) scale(1.0)">
+                <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+                <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+                <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+                <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+                <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+                <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            </g>
+        </svg>
+    </div>
+    
+    <h2>4. Embedded SVG (Horizontal with Text)</h2>
+    <div class="test-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+            <rect width="400" height="120" fill="#0d4d3f"/>
+            <g transform="translate(20, 30) scale(0.8)">
+                <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="2.4" stroke-linecap="square"/>
+                <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="2.4" stroke-linecap="square"/>
+                <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="2.4" stroke-linecap="square"/>
+                <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+                <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+                <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+            </g>
+            <g>
+                <path d="M 120 90 L 120 40 L 141 40 L 145 52.5 L 141 65 L 120 65 Z M 130 65 L 145 90" fill="none" stroke="#ffffff" stroke-width="6.67" stroke-linecap="square" stroke-linejoin="miter"/>
+                <path d="M 162 40 L 162 90 M 153 40 L 170 40 M 153 90 L 170 90" fill="none" stroke="#ffffff" stroke-width="6.67" stroke-linecap="square"/>
+                <path d="M 187 90 L 187 40 L 212 40 M 187 63.3 L 208 63.3" fill="none" stroke="#ffffff" stroke-width="6.67" stroke-linecap="square"/>
+                <path d="M 224 40 L 258 40 M 241 40 L 241 90" fill="none" stroke="#ffffff" stroke-width="6.67" stroke-linecap="square"/>
+            </g>
+        </svg>
+    </div>
+    
+    <h2>5. File Check</h2>
+    <p>If you see the embedded SVGs above but not the img tags, it's a file path issue.</p>
+    <p>If you see nothing, there's a rendering issue.</p>
+</body>
+</html>

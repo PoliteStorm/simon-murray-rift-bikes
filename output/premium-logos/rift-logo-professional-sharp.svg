@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Professional sharp -->
+        <g transform="translate(50, 75)">
+            <!-- Clean geometric break -->
+            <line x1="0" y1="0" x2="85" y2="0" stroke="#fbbf24" stroke-width="4" 
+                  stroke-linecap="square"/>
+            <circle cx="85" cy="0" r="6" fill="none" stroke="#10b981" 
+                    stroke-width="3" opacity="0.8"/>
+            <!-- Sharp break -->
+            <path d="M85,0 L105,-12 L125,0" stroke="#fbbf24" stroke-width="4" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+        </g>
+        <!-- RIFT text - professional sharp -->
+        <text x="200" y="90" font-family="'Work Sans', sans-serif" font-size="50" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.12em">RIFT</text>
+        
+</svg>

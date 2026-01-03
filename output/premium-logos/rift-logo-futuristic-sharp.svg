@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Futuristic sharp -->
+        <g transform="translate(50, 75)">
+            <!-- Futuristic angular pattern -->
+            <path d="M0,0 L50,-20 L100,0" stroke="#fbbf24" stroke-width="4.5" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M100,0 L130,-15 L160,0" stroke="#10b981" stroke-width="4" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <!-- Sharp points -->
+            <circle cx="50" cy="-20" r="4" fill="#fbbf24" opacity="0.9"/>
+            <circle cx="130" cy="-15" r="3.5" fill="#10b981" opacity="0.9"/>
+        </g>
+        <!-- RIFT text - futuristic -->
+        <text x="200" y="90" font-family="'Exo 2', sans-serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.16em">RIFT</text>
+        
+</svg>

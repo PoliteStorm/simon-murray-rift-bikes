@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+    <rect width="100" height="100" fill="#0d4d3f"/>
+    
+        <defs>
+            <linearGradient id="grad-gold-emerald" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#fbbf24"/>
+                <stop offset="100%" stop-color="#10b981"/>
+            </linearGradient>
+        </defs>
+        
+        <g transform="translate(10.0, 30.0) scale(1.0)">
+            <path d="M10 30 L90 30" stroke="url(#grad-gold-emerald)" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="url(#grad-gold-emerald)" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="url(#grad-gold-emerald)" stroke-width="3" stroke-linecap="square"/>
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="url(#grad-gold-emerald)" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="url(#grad-gold-emerald)" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="url(#grad-gold-emerald)" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <g transform="translate(50, 75)">
+            <!-- Racing line -->
+            <line x1="0" y1="0" x2="100" y2="0" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+            <!-- Atomic split point -->
+            <circle cx="100" cy="0" r="10" fill="#fbbf24" opacity="0.9"/>
+            <circle cx="100" cy="0" r="6" fill="#10b981" opacity="0.8"/>
+            <!-- Splitting particles -->
+            <path d="M100,0 L130,-20 M100,0 L130,20" stroke="#fbbf24" stroke-width="4" 
+                  stroke-linecap="round"/>
+            <path d="M100,0 L125,-18 M100,0 L125,18" stroke="#10b981" stroke-width="3.5" 
+                  stroke-linecap="round" opacity="0.8"/>
+            <!-- Speed continuation -->
+            <path d="M130,-20 L150,-25 L170,-20" stroke="#fbbf24" stroke-width="3" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="M130,20 L150,25 L170,20" stroke="#fbbf24" stroke-width="3" 
+                  fill="none" stroke-linecap="round"/>
+        </g>
+        <text x="200" y="90" font-family="'Oswald', sans-serif" font-size="56" 
+              font-weight="600" fill="#ffffff" letter-spacing="0.15em">RIFT</text>
+        
+</svg>

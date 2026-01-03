@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Modern sharp edge -->
+        <g transform="translate(50, 75)">
+            <!-- Sharp edge lines -->
+            <path d="M0,0 L40,-15 L80,0" stroke="#fbbf24" stroke-width="4.5" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M80,0 L110,-12 L140,0" stroke="#10b981" stroke-width="4" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <!-- Sharp point -->
+            <circle cx="40" cy="-15" r="4" fill="#fbbf24" opacity="0.9"/>
+        </g>
+        <!-- RIFT text - modern sharp -->
+        <text x="200" y="90" font-family="'DM Sans', sans-serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.13em">RIFT</text>
+        
+</svg>

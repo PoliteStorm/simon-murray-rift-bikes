@@ -1,0 +1,41 @@
+<svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Volcanic rift icon -->
+  <g transform="translate(50, 50)">
+    <path d="M10 20 L90 20" stroke="#fbbf24" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M20 50 L80 50" stroke="#fbbf24" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M30 80 L70 80" stroke="#fbbf24" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M25 5 L28 20 M75 5 L72 20" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+    <path d="M35 35 L38 50 M65 35 L62 50" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+    <path d="M50 65 L53 80 M50 65 L47 80" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+    <path d="M40 10 L42 20 M60 10 L58 20" stroke="#10b981" stroke-width="2" stroke-linecap="square" opacity="0.7"/>
+    <path d="M45 40 L47 50 M55 40 L53 50" stroke="#10b981" stroke-width="2" stroke-linecap="square" opacity="0.7"/>
+  </g>
+  <!-- Custom RIFT Typography -->
+  <g transform="translate(20, 180)">
+    <!-- R -->
+    <path d="M0 0 L0 45 L15 45 L22 38 L22 25 L15 18 L0 18 Z" fill="#ffffff"/>
+    <path d="M0 27 L15 27 L18 30 L15 45" fill="#ffffff"/>
+    <path d="M0 0 L0 45 L15 45 L22 38 L22 25 L15 18 L0 18 M0 27 L15 27 L18 30 L15 45" stroke="#fbbf24" stroke-width="1.2" stroke-linejoin="miter"/>
+    <path d="M3 22 L20 14" stroke="#10b981" stroke-width="0.8" opacity="0.5" stroke-linecap="square"/>
+    
+    <!-- I -->
+    <g transform="translate(28, 0)">
+      <path d="M0 0 L16 0 L16 10 L9 10 L9 35 L16 35 L16 45 L0 45 L0 35 L7 35 L7 10 L0 10 Z" fill="#ffffff"/>
+      <path d="M0 0 L16 0 L16 10 L9 10 L9 35 L16 35 L16 45 L0 45 L0 35 L7 35 L7 10 L0 10" stroke="#fbbf24" stroke-width="1.2" stroke-linejoin="miter"/>
+    </g>
+    
+    <!-- F -->
+    <g transform="translate(48, 0)">
+      <path d="M0 0 L0 45 L16 45 L16 34 L9 34 L9 24 L16 24 L16 13 L9 13 L9 0 Z" fill="#ffffff"/>
+      <path d="M0 0 L0 45 L16 45 L16 34 L9 34 L9 24 L16 24 L16 13 L9 13 L9 0" stroke="#fbbf24" stroke-width="1.2" stroke-linejoin="miter"/>
+      <path d="M3 13 L19 9" stroke="#10b981" stroke-width="0.8" opacity="0.5" stroke-linecap="square"/>
+    </g>
+    
+    <!-- T -->
+    <g transform="translate(68, 0)">
+      <path d="M0 0 L24 0 L24 10 L15 10 L15 45 L10 45 L10 10 L0 10 Z" fill="#ffffff"/>
+      <path d="M0 0 L24 0 L24 10 L15 10 L15 45 L10 45 L10 10 L0 10" stroke="#fbbf24" stroke-width="1.2" stroke-linejoin="miter"/>
+      <path d="M6 5 L18 5" stroke="#10b981" stroke-width="0.8" opacity="0.5" stroke-linecap="square"/>
+    </g>
+  </g>
+</svg>

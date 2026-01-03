@@ -1,0 +1,44 @@
+<svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large icon on left -->
+  <g transform="translate(50, 50)">
+    <path d="M20 30 L120 30" stroke="#fbbf24" stroke-width="5" stroke-linecap="square"/>
+    <path d="M30 60 L110 60" stroke="#fbbf24" stroke-width="5" stroke-linecap="square"/>
+    <path d="M40 90 L100 90" stroke="#fbbf24" stroke-width="5" stroke-linecap="square"/>
+    <path d="M35 5 L40 30 M115 5 L110 30" stroke="#fbbf24" stroke-width="4" stroke-linecap="square"/>
+    <path d="M45 35 L50 60 M105 35 L100 60" stroke="#fbbf24" stroke-width="4" stroke-linecap="square"/>
+    <path d="M70 65 L75 90 M70 65 L65 90" stroke="#fbbf24" stroke-width="4" stroke-linecap="square"/>
+    <path d="M55 15 L58 30 M95 15 L92 30" stroke="#10b981" stroke-width="3" stroke-linecap="square" opacity="0.7"/>
+  </g>
+  <!-- Large Custom RIFT Typography -->
+  <g transform="translate(200, 40)">
+    <!-- R -->
+    <path d="M0 0 L0 80 L30 80 L45 65 L45 40 L30 25 L0 25 Z" fill="#ffffff"/>
+    <path d="M0 45 L30 45 L38 53 L30 80" fill="#ffffff"/>
+    <path d="M0 0 L0 80 L30 80 L45 65 L45 40 L30 25 L0 25 M0 45 L30 45 L38 53 L30 80" stroke="#fbbf24" stroke-width="2" stroke-linejoin="miter"/>
+    <path d="M8 38 L42 25" stroke="#10b981" stroke-width="1.5" opacity="0.5" stroke-linecap="square"/>
+    
+    <!-- I -->
+    <g transform="translate(50, 0)">
+      <path d="M0 0 L32 0 L32 20 L20 20 L20 60 L32 60 L32 80 L0 80 L0 60 L12 60 L12 20 L0 20 Z" fill="#ffffff"/>
+      <path d="M0 0 L32 0 L32 20 L20 20 L20 60 L32 60 L32 80 L0 80 L0 60 L12 60 L12 20 L0 20" stroke="#fbbf24" stroke-width="2" stroke-linejoin="miter"/>
+    </g>
+    
+    <!-- F -->
+    <g transform="translate(90, 0)">
+      <path d="M0 0 L0 80 L32 80 L32 60 L20 60 L20 45 L32 45 L32 25 L20 25 L20 0 Z" fill="#ffffff"/>
+      <path d="M0 0 L0 80 L32 80 L32 60 L20 60 L20 45 L32 45 L32 25 L20 25 L20 0" stroke="#fbbf24" stroke-width="2" stroke-linejoin="miter"/>
+      <path d="M8 25 L44 18" stroke="#10b981" stroke-width="1.5" opacity="0.5" stroke-linecap="square"/>
+    </g>
+    
+    <!-- T -->
+    <g transform="translate(130, 0)">
+      <path d="M0 0 L48 0 L48 20 L30 20 L30 80 L20 80 L20 20 L0 20 Z" fill="#ffffff"/>
+      <path d="M0 0 L48 0 L48 20 L30 20 L30 80 L20 80 L20 20 L0 20" stroke="#fbbf24" stroke-width="2" stroke-linejoin="miter"/>
+      <path d="M12 10 L36 10" stroke="#10b981" stroke-width="1.5" opacity="0.5" stroke-linecap="square"/>
+    </g>
+  </g>
+  <!-- Tagline -->
+  <text x="200" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#10b981" letter-spacing="0.15em" opacity="0.9">
+    PREMIUM ROAD CYCLING • CUSTOM BUILT
+  </text>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Ancient rune symbol -->
+        <g transform="translate(50, 75)">
+            <!-- Rune structure -->
+            <path d="M30,20 L50,-20 L70,20" stroke="#fbbf24" stroke-width="4" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="30" y1="20" x2="70" y2="20" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+            <!-- Central power -->
+            <circle cx="50" cy="0" r="6" fill="#10b981" opacity="0.9"/>
+            <!-- Breaking through -->
+            <path d="M50,-20 L50,-35" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="50" cy="-35" r="5" fill="#fbbf24" opacity="0.8"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Playfair Display', serif" font-size="54" 
+              font-weight="700" fill="#fbbf24" letter-spacing="0.06em">RIFT</text>
+        
+</svg>

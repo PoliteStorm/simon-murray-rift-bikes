@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Triangular power symbol -->
+        <g transform="translate(50, 75)">
+            <!-- Outer triangle -->
+            <polygon points="50,-30 20,20 80,20" fill="none" stroke="#fbbf24" 
+                     stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Inner triangle -->
+            <polygon points="50,-15 30,15 70,15" fill="none" stroke="#10b981" 
+                     stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+            <!-- Central power point -->
+            <circle cx="50" cy="0" r="5" fill="#fbbf24" opacity="0.9"/>
+            <!-- Breaking through top -->
+            <path d="M50,-30 L50,-45" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="50" cy="-45" r="4" fill="#10b981" opacity="0.8"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Space Grotesk', sans-serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.12em">RIFT</text>
+        
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Angular symbolic -->
+        <g transform="translate(50, 75)">
+            <!-- Angular geometric shape -->
+            <polygon points="0,20 50,-25 100,20" fill="none" stroke="#fbbf24" 
+                     stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter"/>
+            <!-- Breaking through -->
+            <path d="M50,-25 L60,-40 L70,-25" stroke="#10b981" stroke-width="4" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <circle cx="50" cy="-25" r="5" fill="#fbbf24" opacity="0.9"/>
+        </g>
+        <!-- RIFT text - angular geometric -->
+        <text x="200" y="90" font-family="'Kanit', sans-serif" font-size="54" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.15em">RIFT</text>
+        
+</svg>

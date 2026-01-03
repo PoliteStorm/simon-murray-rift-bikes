@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        <rect width="600" height="200" fill="#0d4d3f"/>
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(20, 50) scale(1.0)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 180 130.0 L 180 70
+            Q 200.0 70 205.0 82.0
+            Q 208.0 90.0 205.0 98.0
+            L 180 98.0
+            M 190.0 98.0 Q 205.0 115.0 212.0 130.0
+        " stroke="#ffffff" stroke-width="3.0" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 232.0 70 L 232.0 130.0
+            M 222.0 70 Q 227.0 73.0 232.0 73.0
+            Q 237.0 73.0 242.0 70
+            M 222.0 130.0 Q 227.0 127.0 232.0 127.0
+            Q 237.0 127.0 242.0 130.0
+        " stroke="#ffffff" stroke-width="3.0" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 262.0 130.0 L 262.0 70
+            Q 275.0 70 288.0 70
+            M 262.0 98.0 Q 272.0 98.0 282.0 98.0
+        " stroke="#ffffff" stroke-width="3.0" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 300.0 70 Q 318.0 70 338.0 70
+            M 319.0 70 L 319.0 130.0
+        " stroke="#ffffff" stroke-width="3.0" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        
+        
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 200" width="750" height="200">
+    <rect width="750" height="200" fill="#0d4d3f"/>
+    
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(30, 40) scale(0.8)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+        </g>
+        
+        <g>
+            <path d="M 140.0 130.0 L 140.0 80.0 L 160.83333333333334 80.0 L 165.0 92.5 L 160.83333333333334 105.0 L 140.0 105.0 Z M 150.0 105.0 L 165.0 130.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M 181.66666666666669 80.0 L 181.66666666666669 130.0 M 173.33333333333334 80.0 L 190.0 80.0 M 173.33333333333334 130.0 L 190.0 130.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+            <path d="M 206.66666666666669 130.0 L 206.66666666666669 80.0 L 231.66666666666669 80.0 M 206.66666666666669 103.33333333333334 L 227.5 103.33333333333334" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+            <path d="M 244.16666666666669 80.0 L 277.5 80.0 M 260.83333333333337 80.0 L 260.83333333333337 130.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+        </g>
+        
+</svg>

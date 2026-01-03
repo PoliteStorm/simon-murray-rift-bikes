@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200" width="1920" height="200">
+    <rect width="1920" height="200" fill="#0d4d3f"/>
+    
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(50, 50) scale(1.0)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        <g>
+            <path d="M 200.0 140.0 L 200.0 80.0 L 225.0 80.0 L 230.0 95.0 L 225.0 110.0 L 200.0 110.0 Z M 212.0 110.0 L 230.0 140.0" fill="none" stroke="#ffffff" stroke-width="8.0" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M 250.0 80.0 L 250.0 140.0 M 240.0 80.0 L 260.0 80.0 M 240.0 140.0 L 260.0 140.0" fill="none" stroke="#ffffff" stroke-width="8.0" stroke-linecap="square"/>
+            <path d="M 280.0 140.0 L 280.0 80.0 L 310.0 80.0 M 280.0 108.0 L 305.0 108.0" fill="none" stroke="#ffffff" stroke-width="8.0" stroke-linecap="square"/>
+            <path d="M 325.0 80.0 L 365.0 80.0 M 345.0 80.0 L 345.0 140.0" fill="none" stroke="#ffffff" stroke-width="8.0" stroke-linecap="square"/>
+        </g>
+        
+</svg>

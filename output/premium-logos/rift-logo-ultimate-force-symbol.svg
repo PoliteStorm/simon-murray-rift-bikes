@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <radialGradient id="ult-force" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.5"/>
+            </radialGradient>
+        </defs>
+        <g transform="translate(50, 75)">
+            <polygon points="0,20 50,-25 100,20" fill="none" stroke="url(#ult-force)" 
+                     stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter"/>
+            <line x1="50" y1="-25" x2="50" y2="-40" stroke="url(#ult-force)" stroke-width="4" stroke-linecap="square"/>
+            <path d="M50,-40 L40,-50 M50,-40 L50,-55 M50,-40 L60,-50" stroke="#fbbf24" 
+                  stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+        </g>
+        <text x="200" y="90" font-family="'Abril Fatface', serif" font-size="58" 
+              font-weight="400" fill="#fbbf24" letter-spacing="0.06em">RIFT</text>
+        
+</svg>

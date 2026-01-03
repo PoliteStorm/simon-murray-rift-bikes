@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        <rect width="600" height="200" fill="#0f3d32"/>
+        
+        <g>
+            <path d="
+            M 58.0 130.0 L 68.0 70
+            L 88.0 70
+            Q 93.0 82.0 88.0 95.0
+            L 68.0 95.0
+            M 73.0 95.0 L 88.0 130.0
+        " stroke="#ffffff" stroke-width="3.5" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 110.0 70 L 100.0 130.0
+        " stroke="#ffffff" stroke-width="3.5" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="
+            M 120.0 130.0 L 130.0 70
+            L 158.0 70
+            M 125.0 98.0 L 148.0 98.0
+        " stroke="#ffffff" stroke-width="3.5" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="
+            M 170.0 70 L 205.0 70
+            M 188.0 70 L 178.0 130.0
+        " stroke="#ffffff" stroke-width="3.5" 
+                  fill="none" stroke-linecap="round"/>
+        </g>
+        
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(450, 50) scale(1.0)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 110" width="350" height="110">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(0, 0) scale(0.8)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#0d4d3f" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#0d4d3f" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#0d4d3f" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#0d4d3f" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#0d4d3f" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#0d4d3f" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 100 77.0 L 100 38.5
+            Q 100 35 103.5 35
+            L 114.0 35
+            Q 121.0 35 121.0 44.8
+            Q 121.0 53.2 112.6 53.2
+            L 100 53.2
+            M 105.6 53.2 L 121.0 77.0
+        " stroke="#0d4d3f" stroke-width="2.8" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 136.4 35 L 136.4 77.0
+        " stroke="#0d4d3f" stroke-width="2.8" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="
+            M 151.8 77.0 L 151.8 35
+            L 173.5 35
+            M 151.8 54.599999999999994 L 168.6 54.599999999999994
+        " stroke="#0d4d3f" stroke-width="2.8" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="
+            M 181.89999999999998 35 L 208.5 35
+            M 195.2 35 L 195.2 77.0
+        " stroke="#0d4d3f" stroke-width="2.8" 
+                  fill="none" stroke-linecap="round"/>
+        </g>
+        
+        
+</svg>

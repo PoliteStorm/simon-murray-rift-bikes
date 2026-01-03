@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <linearGradient id="wave-break-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fbbf24"/>
+                <stop offset="100%" stop-color="#10b981"/>
+            </linearGradient>
+        </defs>
+        <g transform="translate(50, 75)">
+            <path d="M0,0 Q30,-15 60,0 T120,0" stroke="url(#wave-break-grad)" stroke-width="4.5" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="M120,0 L140,-12 L160,0" stroke="#fbbf24" stroke-width="4" 
+                  fill="none" stroke-linecap="square"/>
+        </g>
+        <text x="200" y="90" font-family="'Ubuntu', sans-serif" font-size="50" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.1em">RIFT</text>
+        
+</svg>

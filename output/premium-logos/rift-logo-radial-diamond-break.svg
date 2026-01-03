@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <radialGradient id="rad-diam" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+            </radialGradient>
+        </defs>
+        <g transform="translate(50, 75)">
+            <polygon points="50,0 50,-30 0,-15 0,15" fill="url(#rad-diam)" opacity="0.9"/>
+            <polygon points="100,0 100,-30 150,-15 150,15" fill="url(#rad-diam)" opacity="0.9"/>
+            <circle cx="75" cy="-15" r="6" fill="#fbbf24" opacity="0.9"/>
+        </g>
+        <text x="200" y="90" font-family="'Ubuntu', sans-serif" font-size="50" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.1em">RIFT</text>
+        
+</svg>

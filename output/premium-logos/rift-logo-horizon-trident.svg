@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <g transform="translate(50, 75)">
+            <line x1="0" y1="0" x2="100" y2="0" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="0" r="8" fill="#fbbf24" opacity="0.9"/>
+            <path d="M50,0 L40,-20 M50,0 L50,-25 M50,0 L60,-20" stroke="#10b981" 
+                  stroke-width="3.5" stroke-linecap="round"/>
+        </g>
+        <text x="200" y="90" font-family="'Raleway', sans-serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.2em">RIFT</text>
+        
+</svg>

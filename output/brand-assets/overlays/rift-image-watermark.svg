@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150">
+    
+    
+        <g opacity="0.4">
+            
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(37.5, 37.5) scale(0.75)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#000000" stroke-width="2.25" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#000000" stroke-width="2.25" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#000000" stroke-width="2.25" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#000000" stroke-width="1.875" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#000000" stroke-width="1.875" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#000000" stroke-width="1.875" stroke-linecap="square"/>
+        </g>
+        
+        </g>
+        
+</svg>

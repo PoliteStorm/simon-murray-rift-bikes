@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Bold velocity lines -->
+        <g transform="translate(50, 75)">
+            <path d="M0,0 Q40,-20 80,0 T160,0" stroke="#fbbf24" stroke-width="5" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="M0,15 Q40,-5 80,15 T160,15" stroke="#10b981" stroke-width="4" 
+                  fill="none" stroke-linecap="round" opacity="0.8"/>
+        </g>
+        <!-- RIFT text in bold condensed -->
+        <text x="200" y="95" font-family="'Bebas Neue', sans-serif" font-size="64" 
+              font-weight="400" fill="#ffffff" letter-spacing="0.2em">RIFT</text>
+        
+</svg>

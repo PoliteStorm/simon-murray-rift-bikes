@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+<defs>
+  <!-- Gold metallic gradient -->
+  <linearGradient id="grad-gold-metal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.7"/>
+    <stop offset="40%" stop-color="#ffe39c" stop-opacity="1"/>
+    <stop offset="70%" stop-color="#fbbf24" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#ad7a14" stop-opacity="1"/>
+  </linearGradient>
+
+  <!-- Emerald depth gradient -->
+  <linearGradient id="grad-emerald-depth" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#065f46"/>
+    <stop offset="50%" stop-color="#0f3d32"/>
+    <stop offset="100%" stop-color="#0d4d3f"/>
+  </linearGradient>
+
+  <!-- Soft glow filter - more subtle -->
+  <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+    <feColorMatrix in="blur" type="matrix"
+      values="0 0 0 0 1   0 0 0 0 0.85   0 0 0 0 0.3   0 0 0 0.6 0"
+      result="colored"/>
+    <feMerge>
+      <feMergeNode in="colored"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Multi-layer shadow - softer and more blended -->
+  <filter id="multi-shadow" x="-40%" y="-40%" width="200%" height="200%">
+    <feDropShadow dx="1" dy="1" stdDeviation="1.5"
+      flood-color="#000000" flood-opacity="0.3"/>
+    <feDropShadow dx="3" dy="3" stdDeviation="3"
+      flood-color="#000000" flood-opacity="0.25"/>
+    <feDropShadow dx="6" dy="6" stdDeviation="4"
+      flood-color="#000000" flood-opacity="0.15"/>
+  </filter>
+
+  <!-- Carbon fiber pattern -->
+  <pattern id="carbon-fiber" x="0" y="0" width="8" height="8"
+           patternUnits="userSpaceOnUse">
+    <rect width="8" height="8" fill="#111"/>
+    <path d="M0 4 L4 0 L8 4 L4 8 Z" fill="#222"/>
+    <path d="M0 0 L4 4 L0 8 Z" fill="#333"/>
+    <path d="M8 0 L4 4 L8 8 Z" fill="#000"/>
+  </pattern>
+
+  <!-- Brushed metal texture (to be applied as filter) -->
+  <filter id="brushed-metal" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise"
+                  baseFrequency="0.8 0"
+                  numOctaves="2"
+                  result="noise"/>
+    <feColorMatrix in="noise" type="matrix"
+      values="0 0 0 0 1   0 0 0 0 0.9   0 0 0 0 0.6   0 0 0 1 0"
+      result="goldish"/>
+    <feComposite in="goldish" in2="SourceGraphic" operator="in"/>
+  </filter>
+
+  <!-- Spotlight radial gradient -->
+  <radialGradient id="spotlight" cx="50%" cy="10%" r="70%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+    <stop offset="35%" stop-color="#ffffff" stop-opacity="0.0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.8"/>
+  </radialGradient>
+
+  <!-- Inner light mask for RIFT -->
+  <mask id="inner-light-mask">
+    <rect width="800" height="300" fill="black"/>
+    <text x="140" y="170"
+          font-family="'Orbitron', sans-serif"
+          font-size="130"
+          font-weight="700"
+          fill="white">RIFT</text>
+  </mask>
+
+  <!-- Volcanic rift icon symbol -->
+  <symbol id="rift-icon" viewBox="0 0 100 110">
+    <g stroke="url(#grad-gold-metal)" stroke-linecap="square">
+      <!-- Three horizontal lines -->
+      <path d="M10 30 L90 30" stroke-width="3"/>
+      <path d="M15 60 L85 60" stroke-width="3"/>
+      <path d="M20 90 L80 90" stroke-width="3"/>
+      <!-- Angular cracks -->
+      <path d="M25 15 L28 30 M75 15 L72 30" stroke-width="2.5"/>
+      <path d="M30 45 L33 60 M70 45 L67 60" stroke-width="2.5"/>
+      <path d="M50 75 L53 90 M50 75 L47 90" stroke-width="2.5"/>
+    </g>
+  </symbol>
+</defs>
+<rect width="800" height="300" fill="#0f3d32"/><rect width="800" height="300" fill="url(#spotlight)" opacity="0.9"/><g filter="url(#multi-shadow)">
+<g id="rift-text-spot" transform="translate(160,80) scale(1.2)">
+  <!-- R - Geometric with angular leg -->
+  <path d="
+    M0 0 L0 100 L18 100
+    Q28 100 28 85
+    Q28 70 22 60
+    Q28 50 28 35
+    Q28 20 18 20
+    L0 20 Z
+    M8 25 L18 25
+    Q22 25 22 30
+    Q22 35 18 35
+    L8 35 Z
+    M12 50 L22 80 L12 80 Z
+  " fill="url(#grad-emerald-depth)"/>
+
+  <!-- I - Clean with angular top/bottom -->
+  <g transform="translate(38, 0)">
+    <path d="
+      M0 0 L20 0 L20 12 L12 12 L12 88 L20 88 L20 100 L0 100 L0 88 L8 88 L8 12 L0 12 Z
+    " fill="url(#grad-emerald-depth)"/>
+  </g>
+
+  <!-- F - Angular with geometric cut -->
+  <g transform="translate(66, 0)">
+    <path d="
+      M0 0 L0 100 L20 100 L20 88 L12 88 L12 70 L20 70 L20 58 L12 58 L12 0 Z
+    " fill="url(#grad-emerald-depth)"/>
+  </g>
+
+  <!-- T - Bold with angular top -->
+  <g transform="translate(94, 0)">
+    <path d="
+      M0 0 L30 0 L30 12 L19 12 L19 100 L13 100 L13 12 L0 12 Z
+    " fill="url(#grad-emerald-depth)"/>
+  </g>
+</g>
+</g><use href="#rift-icon" x="600" y="80" width="110" height="110"/></svg>

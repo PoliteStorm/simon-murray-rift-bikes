@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG Test</title>
+    <style>
+        body { background: #333; padding: 20px; }
+        .test { background: white; padding: 20px; margin: 20px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">SVG Test</h1>
+    
+    <div class="test">
+        <h3>Icon Only</h3>
+        <img src="logos/icon-only/rift-logo-icon-only.svg" alt="Icon" style="width: 200px;">
+    </div>
+    
+    <div class="test">
+        <h3>Horizontal Standard</h3>
+        <img src="logos/horizontal/rift-logo-horizontal-standard.svg" alt="Horizontal" style="width: 400px;">
+    </div>
+    
+    <div class="test">
+        <h3>Embedded SVG</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+            <rect width="200" height="200" fill="#0d4d3f"/>
+            <g transform="translate(50, 50) scale(1.0)">
+                <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+                <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+                <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+                <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+                <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+                <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            </g>
+        </svg>
+    </div>
+</body>
+</html>

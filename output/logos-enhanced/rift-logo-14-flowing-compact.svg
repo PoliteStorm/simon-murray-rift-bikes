@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        <rect width="200" height="200" fill="#0d4d3f"/>
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(50, 30) scale(0.6)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 30 155.0
+            Q 30 149.16666666666666 30 131.66666666666666
+            Q 30 120 38.75 120
+            Q 46.333333333333336 120 46.333333333333336 128.75
+            Q 46.333333333333336 134.58333333333334 38.75 136.33333333333334
+            Q 32.916666666666664 136.33333333333334 32.916666666666664 140.41666666666666
+            Q 37.0 144.5 44.583333333333336 155.0
+        " stroke="#ffffff" stroke-width="2.041666666666667" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 58.0 121.16666666666667
+            Q 58.0 137.5 58.0 155.0
+        " stroke="#ffffff" stroke-width="2.041666666666667" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 69.66666666666667 155.0
+            Q 69.66666666666667 143.33333333333334 69.66666666666667 128.75
+            Q 69.66666666666667 120 77.83333333333334 120
+            Q 85.41666666666667 120 91.25 120
+            M 69.66666666666667 136.33333333333334
+            Q 73.75 135.75 81.33333333333334 136.33333333333334
+        " stroke="#ffffff" stroke-width="2.041666666666667" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 97.08333333333334 121.75
+            Q 105.83333333333334 120 116.33333333333334 121.75
+            M 107.0 121.16666666666667
+            Q 107.0 137.5 107.0 155.0
+        " stroke="#ffffff" stroke-width="2.041666666666667" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        
+        
+</svg>

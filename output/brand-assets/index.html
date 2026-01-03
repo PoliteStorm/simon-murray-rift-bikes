@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIFT Brand Assets - Quick View</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #ffffff;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #fbbf24;
+            margin-bottom: 30px;
+        }
+        .warning {
+            background: #ff6b6b;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .success {
+            background: #10b981;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #2a2a2a;
+            border: 2px solid #0d4d3f;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .card-name {
+            color: #fbbf24;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 RIFT Brand Assets</h1>
+    
+    <div id="status" class="warning">
+        Checking file access...
+    </div>
+    
+    <div class="grid">
+        <div class="card">
+            <img src="logos/icon-only/rift-logo-icon-only.svg" alt="Icon Only" onload="showSuccess()" onerror="showError(this)">
+            <div class="card-name">Icon Only</div>
+        </div>
+        
+        <div class="card">
+            <img src="logos/horizontal/rift-logo-horizontal-standard.svg" alt="Horizontal" onerror="showError(this)">
+            <div class="card-name">Horizontal Standard</div>
+        </div>
+        
+        <div class="card">
+            <img src="logos/vertical/rift-logo-vertical-stacked.svg" alt="Vertical" onerror="showError(this)">
+            <div class="card-name">Vertical Stacked</div>
+        </div>
+        
+        <div class="card">
+            <img src="logos/text-only/rift-logo-text-only.svg" alt="Text Only" onerror="showError(this)">
+            <div class="card-name">Text Only</div>
+        </div>
+        
+        <div class="card">
+            <img src="social-media/rift-instagram-pfp.svg" alt="Instagram PFP" onerror="showError(this)">
+            <div class="card-name">Instagram PFP</div>
+        </div>
+        
+        <div class="card">
+            <img src="overlays/rift-video-overlay-standard.svg" alt="Video Overlay" onerror="showError(this)">
+            <div class="card-name">Video Overlay</div>
+        </div>
+    </div>
+    
+    <script>
+        let loadedCount = 0;
+        function showSuccess() {
+            loadedCount++;
+            const status = document.getElementById('status');
+            if (loadedCount === 1) {
+                status.className = 'success';
+                status.textContent = '✓ SVGs are loading! If you see images above, everything is working.';
+            }
+        }
+        function showError(img) {
+            console.error('Failed to load:', img.src);
+            img.style.border = '2px solid red';
+        }
+        
+        // Check if we're on file:// protocol
+        if (window.location.protocol === 'file:') {
+            document.getElementById('status').innerHTML = 
+                '⚠️ You are viewing via file:// protocol. Please use a web server:<br>' +
+                '1. Run: <code>cd output/brand-assets && python3 -m http.server 8000</code><br>' +
+                '2. Open: <a href="http://localhost:8000" style="color: #fbbf24;">http://localhost:8000</a>';
+        }
+    </script>
+</body>
+</html>

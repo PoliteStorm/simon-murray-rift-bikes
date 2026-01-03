@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Clean rupture -->
+        <g transform="translate(50, 75)">
+            <line x1="0" y1="0" x2="80" y2="0" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="80" cy="0" r="7" fill="none" stroke="#10b981" stroke-width="2.5" opacity="0.8"/>
+            <path d="M80,0 L100,-15 L120,0" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M80,0 L100,15 L120,0" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- RIFT text in clean sans -->
+        <text x="200" y="90" font-family="'Sora', sans-serif" font-size="50" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.09em">RIFT</text>
+        
+</svg>

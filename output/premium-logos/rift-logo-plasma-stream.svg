@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <linearGradient id="plasma-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="50%" stop-color="#10b981" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.5"/>
+            </linearGradient>
+            <filter id="plasma-glow">
+                <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+        <!-- Plasma stream -->
+        <g transform="translate(50, 75)">
+            <!-- Main stream -->
+            <path d="M0,0 Q30,-10 60,0 Q90,10 120,0" stroke="url(#plasma-grad)" stroke-width="4.5" 
+                  fill="none" stroke-linecap="round" filter="url(#plasma-glow)"/>
+            <!-- Secondary stream -->
+            <path d="M0,15 Q30,5 60,15 Q90,25 120,15" stroke="url(#plasma-grad)" stroke-width="3" 
+                  fill="none" stroke-linecap="round" opacity="0.7" filter="url(#plasma-glow)"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Montserrat', sans-serif" font-size="50" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.08em">RIFT</text>
+        
+</svg>

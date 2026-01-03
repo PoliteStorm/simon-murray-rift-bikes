@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" width="2560" height="1440">
+    
+    
+        <rect width="2560" height="1440" fill="#0d4d3f"/>
+        <rect x="507" y="508" width="1546" height="423" fill="#0f3d32" opacity="0.2"/>
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(800, 500) scale(2.5)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="7.5" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="7.5" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="7.5" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="6.25" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="6.25" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="6.25" stroke-linecap="square"/>
+        </g>
+        
+        <g>
+            <path d="M 1400.0 770.0 L 1400.0 650.0 L 1450.0 650.0 L 1460.0 680.0 L 1450.0 710.0 L 1400.0 710.0 Z M 1424.0 710.0 L 1460.0 770.0" fill="none" stroke="#ffffff" stroke-width="16.0" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M 1500.0 650.0 L 1500.0 770.0 M 1480.0 650.0 L 1520.0 650.0 M 1480.0 770.0 L 1520.0 770.0" fill="none" stroke="#ffffff" stroke-width="16.0" stroke-linecap="square"/>
+            <path d="M 1560.0 770.0 L 1560.0 650.0 L 1620.0 650.0 M 1560.0 706.0 L 1610.0 706.0" fill="none" stroke="#ffffff" stroke-width="16.0" stroke-linecap="square"/>
+            <path d="M 1650.0 650.0 L 1730.0 650.0 M 1690.0 650.0 L 1690.0 770.0" fill="none" stroke="#ffffff" stroke-width="16.0" stroke-linecap="square"/>
+        </g>
+        
+        <text x="1773" y="850" font-family="Arial, sans-serif" font-size="36" 
+              fill="#fbbf24" text-anchor="middle" font-weight="300" letter-spacing="2">
+            EDGE OF BIKING TECHNOLOGY
+        </text>
+        
+        
+</svg>

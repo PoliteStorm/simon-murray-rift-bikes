@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Legendary force -->
+        <g transform="translate(50, 75)">
+            <!-- Ancient power lines -->
+            <path d="M0,0 L40,0 M0,20 L40,20" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="square"/>
+            <!-- Breaking point -->
+            <line x1="40" y1="0" x2="40" y2="20" stroke="#10b981" stroke-width="3"/>
+            <!-- Force breaking through -->
+            <path d="M40,10 L60,-10 L80,10" stroke="#fbbf24" stroke-width="4" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="M40,10 L60,30 L80,10" stroke="#fbbf24" stroke-width="4" 
+                  fill="none" stroke-linecap="round"/>
+            <!-- Power particles -->
+            <circle cx="60" cy="-10" r="4" fill="#10b981" opacity="0.9"/>
+            <circle cx="60" cy="30" r="4" fill="#10b981" opacity="0.9"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Cormorant Garamond', serif" font-size="56" 
+              font-weight="700" fill="#fbbf24" letter-spacing="0.06em">RIFT</text>
+        
+</svg>

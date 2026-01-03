@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Volcanic rift icon - centered, bold -->
+  <g transform="translate(20, 20)">
+    <!-- Main rift lines - bold and dynamic -->
+    <path d="M10 40 L150 40" stroke="#fbbf24" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M20 80 L140 80" stroke="#fbbf24" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M30 120 L130 120" stroke="#fbbf24" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+    <!-- Sharp angular cracks -->
+    <path d="M30 10 L35 40 M130 10 L125 40" stroke="#fbbf24" stroke-width="4" stroke-linecap="square"/>
+    <path d="M40 60 L45 80 M120 60 L115 80" stroke="#fbbf24" stroke-width="4" stroke-linecap="square"/>
+    <path d="M80 100 L85 120 M80 100 L75 120" stroke="#fbbf24" stroke-width="4" stroke-linecap="square"/>
+    <!-- Emerald accent details -->
+    <path d="M50 20 L53 40 M110 20 L107 40" stroke="#10b981" stroke-width="2.5" stroke-linecap="square" opacity="0.8"/>
+    <path d="M60 70 L63 80 M100 70 L97 80" stroke="#10b981" stroke-width="2.5" stroke-linecap="square" opacity="0.8"/>
+    <path d="M70 110 L73 120 M90 110 L87 120" stroke="#10b981" stroke-width="2.5" stroke-linecap="square" opacity="0.8"/>
+  </g>
+</svg>

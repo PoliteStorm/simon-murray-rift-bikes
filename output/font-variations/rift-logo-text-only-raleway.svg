@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    
+    <defs>
+        <style type="text/css"><![CDATA[
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap');
+        ]]></style>
+    </defs>
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <text x="200" y="80" 
+              font-family="Raleway, sans-serif" 
+              font-size="70" 
+              font-weight="700"
+              fill="#fbbf24" 
+              text-anchor="middle"
+              letter-spacing="0.1em">
+            RIFT
+        </text>
+        
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+    <rect width="400" height="120" fill="#0d4d3f"/>
+    
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(20, 30) scale(0.8)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="2.4000000000000004" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.0" stroke-linecap="square"/>
+        </g>
+        
+        <g>
+            <path d="M 120.0 90.0 L 120.0 40.0 L 140.83333333333334 40.0 L 145.0 52.5 L 140.83333333333334 65.0 L 120.0 65.0 Z M 130.0 65.0 L 145.0 90.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M 161.66666666666669 40.0 L 161.66666666666669 90.0 M 153.33333333333334 40.0 L 170.0 40.0 M 153.33333333333334 90.0 L 170.0 90.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+            <path d="M 186.66666666666669 90.0 L 186.66666666666669 40.0 L 211.66666666666669 40.0 M 186.66666666666669 63.333333333333336 L 207.5 63.333333333333336" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+            <path d="M 224.16666666666669 40.0 L 257.5 40.0 M 240.83333333333334 40.0 L 240.83333333333334 90.0" fill="none" stroke="#ffffff" stroke-width="6.666666666666667" stroke-linecap="square"/>
+        </g>
+        
+</svg>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap');
+        </style>
+    </defs>
+    
+        <rect width="600" height="250" fill="#0d4d3f"/>
+        
+        <!-- Volcanic Rift Icon -->
+        <g transform="translate(20, 50) scale(1.0)">
+            <!-- Horizontal lines -->
+            <path d="M10 30 L90 30" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M15 60 L85 60" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 90 L80 90" stroke="#fbbf24" stroke-width="3" stroke-linecap="square"/>
+            <!-- Angular cracks -->
+            <path d="M25 15 L28 30 M75 15 L72 30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M30 45 L33 60 M70 45 L67 60" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+            <path d="M50 75 L53 90 M50 75 L47 90" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 180 130.0 L 180 75.0
+            Q 180 70 185.0 70
+            L 200.0 70
+            Q 210.0 70 210.0 84.0
+            Q 210.0 96.0 198.0 96.0
+            L 180 96.0
+            M 188.0 96.0 L 210.0 130.0
+        " stroke="#ffffff" stroke-width="4.0" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="
+            M 232.0 70 L 232.0 130.0
+        " stroke="#ffffff" stroke-width="4.0" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="
+            M 254.0 130.0 L 254.0 70
+            L 285.0 70
+            M 254.0 98.0 L 278.0 98.0
+        " stroke="#ffffff" stroke-width="4.0" 
+                  fill="none" stroke-linecap="round"/>
+            <path d="
+            M 297.0 70 L 335.0 70
+            M 316.0 70 L 316.0 130.0
+        " stroke="#ffffff" stroke-width="4.0" 
+                  fill="none" stroke-linecap="round"/>
+        </g>
+        
+        
+        <text x="300" y="200" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="14" 
+              fill="#fbbf24" text-anchor="middle" font-weight="300" letter-spacing="3">
+            CUSTOM BIKE SHOP
+        </text>
+        
+        
+</svg>

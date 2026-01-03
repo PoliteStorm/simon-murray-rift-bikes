@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Nexus point design -->
+        <g transform="translate(100, 75)">
+            <!-- Central nexus -->
+            <circle cx="0" cy="0" r="10" fill="#fbbf24" opacity="0.9"/>
+            <circle cx="0" cy="0" r="6" fill="#10b981" opacity="0.8"/>
+            <!-- Converging lines -->
+            <line x1="-40" y1="-20" x2="0" y2="0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="-40" y1="20" x2="0" y2="0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="40" y1="-20" x2="0" y2="0" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+            <line x1="40" y1="20" x2="0" y2="0" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+            <!-- Breaking through -->
+            <path d="M0,0 L20,-15 L40,0" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Inter', sans-serif" font-size="48" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.1em">RIFT</text>
+        
+</svg>

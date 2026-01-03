@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <linearGradient id="meteor-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="70%" stop-color="#10b981" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.3"/>
+            </linearGradient>
+        </defs>
+        <!-- Meteor trail -->
+        <g transform="translate(50, 75)">
+            <!-- Main trail -->
+            <path d="M0,0 Q40,-15 80,0 T160,0" stroke="url(#meteor-grad)" stroke-width="4" 
+                  fill="none" stroke-linecap="round"/>
+            <!-- Meteor head -->
+            <circle cx="160" cy="0" r="6" fill="#fbbf24" opacity="0.9"/>
+            <!-- Trail particles -->
+            <circle cx="40" cy="0" r="2" fill="#fbbf24" opacity="0.7"/>
+            <circle cx="80" cy="0" r="2.5" fill="#10b981" opacity="0.8"/>
+            <circle cx="120" cy="0" r="2" fill="#fbbf24" opacity="0.6"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Orbitron', sans-serif" font-size="48" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.15em">RIFT</text>
+        
+</svg>

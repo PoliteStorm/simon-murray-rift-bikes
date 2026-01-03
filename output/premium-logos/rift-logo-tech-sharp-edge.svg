@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Tech sharp edge -->
+        <g transform="translate(50, 75)">
+            <!-- Sharp tech lines -->
+            <line x1="0" y1="0" x2="100" y2="0" stroke="#fbbf24" stroke-width="5" 
+                  stroke-linecap="square"/>
+            <line x1="25" y1="-12" x2="25" y2="12" stroke="#fbbf24" stroke-width="3"/>
+            <line x1="50" y1="-15" x2="50" y2="15" stroke="#10b981" stroke-width="3.5"/>
+            <line x1="75" y1="-12" x2="75" y2="12" stroke="#fbbf24" stroke-width="3"/>
+            <!-- Sharp break -->
+            <path d="M100,0 L120,-15 L140,0" stroke="#fbbf24" stroke-width="5" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+        </g>
+        <!-- RIFT text - tech bold -->
+        <text x="200" y="92" font-family="'Russo One', sans-serif" font-size="54" 
+              font-weight="400" fill="#ffffff" letter-spacing="0.18em">RIFT</text>
+        
+</svg>

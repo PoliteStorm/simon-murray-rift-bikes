@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <defs>
+            <radialGradient id="radial-atl" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fbbf24" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+            </radialGradient>
+        </defs>
+        <g transform="translate(100, 75)">
+            <circle cx="0" cy="0" r="12" fill="url(#radial-atl)"/>
+            <path d="M0,0 L30,-22 M0,0 L30,22" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M0,0 L25,-18 M0,0 L25,18" stroke="#10b981" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+        </g>
+        <text x="200" y="90" font-family="'Exo 2', sans-serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.16em">RIFT</text>
+        
+</svg>

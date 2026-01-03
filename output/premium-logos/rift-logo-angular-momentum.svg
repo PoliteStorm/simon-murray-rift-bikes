@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Angular momentum representation -->
+        <g transform="translate(50, 75)">
+            <!-- Rotating angular lines -->
+            <g transform="rotate(-15 50 0)">
+                <line x1="0" y1="0" x2="100" y2="0" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+                <line x1="0" y1="0" x2="80" y2="-30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+                <line x1="0" y1="0" x2="80" y2="30" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+            </g>
+            <!-- Momentum continuation -->
+            <path d="M100,0 Q150,10 200,0" stroke="#10b981" stroke-width="2.5" fill="none" opacity="0.7"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="220" y="90" font-family="'Space Grotesk', sans-serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.12em">RIFT</text>
+        
+</svg>

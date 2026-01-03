@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <g transform="translate(50, 75)">
+            <polygon points="0,20 50,-25 100,20" fill="none" stroke="#fbbf24" 
+                     stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M50,-25 L50,-40" stroke="#10b981" stroke-width="3.5" stroke-linecap="round"/>
+        </g>
+        <text x="200" y="90" font-family="'Lora', serif" font-size="52" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.05em">RIFT</text>
+        
+</svg>

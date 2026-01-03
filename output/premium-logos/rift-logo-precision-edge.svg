@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Precision edge design -->
+        <g transform="translate(50, 75)">
+            <!-- Sharp edge line -->
+            <line x1="0" y1="0" x2="120" y2="0" stroke="#fbbf24" stroke-width="4" stroke-linecap="square"/>
+            <!-- Precision marks -->
+            <line x1="30" y1="-8" x2="30" y2="8" stroke="#fbbf24" stroke-width="2"/>
+            <line x1="60" y1="-10" x2="60" y2="10" stroke="#10b981" stroke-width="2.5"/>
+            <line x1="90" y1="-8" x2="90" y2="8" stroke="#fbbf24" stroke-width="2"/>
+            <!-- Edge continuation (breaking through) -->
+            <path d="M120,0 L140,-15 L160,0" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Inter', sans-serif" font-size="48" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.1em">RIFT</text>
+        
+</svg>

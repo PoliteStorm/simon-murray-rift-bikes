@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+    <rect width="400" height="150" fill="#0d4d3f"/>
+    
+        <!-- Geometric flow pattern -->
+        <g transform="translate(50, 75)">
+            <!-- Flowing geometric shapes -->
+            <path d="M0,0 L40,-20 L80,0 L120,20 L160,0" stroke="#fbbf24" 
+                  stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Parallel flow -->
+            <path d="M0,15 L40,-5 L80,15 L120,35 L160,15" stroke="#10b981" 
+                  stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+        </g>
+        <!-- RIFT text -->
+        <text x="200" y="90" font-family="'Inter', sans-serif" font-size="48" 
+              font-weight="700" fill="#ffffff" letter-spacing="0.1em">RIFT</text>
+        
+</svg>
