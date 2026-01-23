@@ -59,17 +59,6 @@ function CheckoutForm({ amount, orderId, customerEmail, onSuccess, onCancel }: S
         <PaymentElement 
           options={{
             layout: 'tabs',
-            appearance: {
-              theme: 'night',
-              variables: {
-                colorPrimary: '#fbbf24',
-                colorBackground: '#0f3d32',
-                colorText: '#ffffff',
-                colorDanger: '#ef4444',
-                fontFamily: 'system-ui, sans-serif',
-                borderRadius: '12px',
-              },
-            },
           }}
         />
       </div>
