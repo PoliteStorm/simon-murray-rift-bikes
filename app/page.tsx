@@ -50,7 +50,7 @@ export default function Home() {
               />
             </div>
             <p className="text-xl md:text-2xl text-white mb-12 drop-shadow-lg">
-              Premium Road Cycling. Custom Built.
+              Premium Road Cycling. Locally Assembled.
             </p>
             <div className="flex justify-center space-x-4">
               <Link href="/bikes" className="rift-button shadow-2xl">

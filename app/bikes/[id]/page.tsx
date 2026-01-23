@@ -207,7 +207,7 @@ export default function BikeDetailPage() {
             </div>
             <div className="text-white/60 text-sm space-y-1">
               <p>Standard spec bikes ship immediately.</p>
-              <p>Contact us for custom builds.</p>
+              <p>Contact us to discuss paint customization options.</p>
             </div>
           </div>
         </div>

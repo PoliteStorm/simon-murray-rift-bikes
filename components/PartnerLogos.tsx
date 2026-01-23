@@ -73,25 +73,19 @@ export default function PartnerLogos({
 
   if (variant === 'grid') {
     return (
-      <div className="bg-rift-card border border-rift-emerald rounded-lg p-8">
-        <h3 className="text-2xl font-bold text-white mb-6 text-center">Premium Components & Features</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="w-full">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6 items-center justify-items-center">
           {partnerLogos.map((logo, index) => (
             <div 
               key={index}
-              className="flex flex-col items-center justify-center p-4 bg-rift-dark/50 rounded-lg border border-rift-emerald/30 hover:border-rift-gold transition-all hover:bg-rift-dark/70"
+              className="w-full flex items-center justify-center h-16 md:h-20 lg:h-24"
             >
-              <div className="w-full h-32 md:h-40 lg:h-48 flex items-center justify-center mb-2 relative bg-transparent partner-logo">
-                <img 
-                  src={logo.imagePath} 
-                  alt={logo.name}
-                  className="h-32 md:h-40 lg:h-48 w-auto object-contain partner-logo"
-                  style={{ maxWidth: '600px', backgroundColor: 'transparent', imageRendering: 'auto' }}
-                />
-              </div>
-              {showCategories && logo.category && (
-                <span className="text-xs text-rift-gold/70 mt-1">{logo.category}</span>
-              )}
+              <img 
+                src={logo.imagePath} 
+                alt={logo.name}
+                className="max-h-full max-w-full w-auto h-auto object-contain"
+                style={{ backgroundColor: 'transparent' }}
+              />
             </div>
           ))}
         </div>
@@ -101,18 +95,18 @@ export default function PartnerLogos({
 
   if (variant === 'compact') {
     return (
-      <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 py-6">
+      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8 py-4">
         {partnerLogos.map((logo, index) => (
           <div 
             key={index}
-            className="h-20 md:h-24 lg:h-28 opacity-80 hover:opacity-100 transition-opacity relative partner-logo flex items-center justify-center"
-            style={{ width: 'auto', minWidth: '120px' }}
+            className="h-12 md:h-16 lg:h-20 flex items-center justify-center"
+            style={{ width: 'auto' }}
           >
             <img 
               src={logo.imagePath} 
               alt={logo.name}
-              className="h-20 md:h-24 lg:h-28 w-auto object-contain partner-logo"
-              style={{ maxWidth: '200px', backgroundColor: 'transparent', imageRendering: 'auto' }}
+              className="max-h-full max-w-full w-auto h-auto object-contain"
+              style={{ backgroundColor: 'transparent' }}
             />
           </div>
         ))}
@@ -122,38 +116,22 @@ export default function PartnerLogos({
 
   // Default variant - grouped by category
   return (
-    <div className="bg-rift-card border border-rift-emerald rounded-lg p-8">
-      <h3 className="text-2xl font-bold text-white mb-8 text-center">
-        Premium Components & Quality Assurance
-      </h3>
-      
-      {Object.entries(groupedLogos).map(([category, logos]) => (
-        <div key={category} className="mb-8 last:mb-0">
-          {showCategories && (
-            <h4 className="text-lg font-semibold text-rift-gold mb-4">{category}</h4>
-          )}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {logos.map((logo, index) => (
-              <div 
-                key={index}
-                className="flex flex-col items-center justify-center p-4 bg-rift-dark/50 rounded-lg border border-rift-emerald/30 hover:border-rift-gold transition-all hover:bg-rift-dark/70 group"
-              >
-                <div className="w-full h-32 md:h-40 lg:h-48 flex items-center justify-center mb-2 relative bg-transparent partner-logo">
-                  <img 
-                    src={logo.imagePath} 
-                    alt={logo.name}
-                    className="h-32 md:h-40 lg:h-48 w-auto object-contain partner-logo"
-                    style={{ maxWidth: '600px', backgroundColor: 'transparent', imageRendering: 'auto' }}
-                  />
-                </div>
-                <span className="text-xs text-white/60 group-hover:text-rift-gold transition-colors">
-                  {logo.name}
-                </span>
-              </div>
-            ))}
+    <div className="w-full">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6 items-center justify-items-center">
+        {partnerLogos.map((logo, index) => (
+          <div 
+            key={index}
+            className="w-full flex items-center justify-center h-16 md:h-20 lg:h-24"
+          >
+            <img 
+              src={logo.imagePath} 
+              alt={logo.name}
+              className="max-h-full max-w-full w-auto h-auto object-contain"
+              style={{ backgroundColor: 'transparent' }}
+            />
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
