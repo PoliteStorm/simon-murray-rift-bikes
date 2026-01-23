@@ -192,10 +192,11 @@ export default function BikeDetailPage() {
                   <input
                     type="checkbox"
                     className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
+                    defaultChecked
                   />
                   <div className="flex-1">
                     <div className="text-white font-semibold text-sm">Standard Paint</div>
-                    <div className="text-white/60 text-xs">Included</div>
+                    <div className="text-white/60 text-xs">Included - Immediate availability</div>
                   </div>
                   <div className="text-rift-gold font-bold text-sm">£0</div>
                 </label>
@@ -206,32 +207,15 @@ export default function BikeDetailPage() {
                   />
                   <div className="flex-1">
                     <div className="text-white font-semibold text-sm">Holographic Paint</div>
-                    <div className="text-white/60 text-xs">Premium color-shifting finish</div>
+                    <div className="text-white/60 text-xs">Premium color-shifting finish - Additional wait time required</div>
                   </div>
                   <div className="text-rift-gold font-bold text-sm">+£500</div>
                 </label>
-                <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
-                  <input
-                    type="checkbox"
-                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
-                  />
-                  <div className="flex-1">
-                    <div className="text-white font-semibold text-sm">3K Gloss Black</div>
-                    <div className="text-white/60 text-xs">Premium carbon fiber finish</div>
-                  </div>
-                  <div className="text-rift-gold font-bold text-sm">+£300</div>
-                </label>
-                <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
-                  <input
-                    type="checkbox"
-                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
-                  />
-                  <div className="flex-1">
-                    <div className="text-white font-semibold text-sm">3K Gloss Green</div>
-                    <div className="text-white/60 text-xs">Premium carbon fiber finish</div>
-                  </div>
-                  <div className="text-rift-gold font-bold text-sm">+£300</div>
-                </label>
+              </div>
+              <div className="mt-3 bg-rift-royal/20 border border-rift-gold/30 rounded-lg p-3">
+                <p className="text-white/80 text-xs">
+                  <strong className="text-rift-gold">Note:</strong> Custom paint jobs require additional wait time. Timeline will be confirmed during order processing.
+                </p>
               </div>
             </div>
             
@@ -241,8 +225,8 @@ export default function BikeDetailPage() {
               </Link>
             </div>
             <div className="text-white/60 text-sm space-y-1">
-              <p>Standard spec bikes ship immediately.</p>
-              <p>Contact us to discuss paint customization options.</p>
+              <p>Standard paint bikes ship immediately.</p>
+              <p>Holographic paint option available - additional wait time applies.</p>
             </div>
           </div>
         </div>

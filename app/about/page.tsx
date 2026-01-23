@@ -10,8 +10,14 @@ export default function AboutPage() {
             RIFT represents the pinnacle of road cycling technology, where premium craftsmanship meets innovative design.
           </p>
           <p className="text-white/80">
-            Each RIFT bike is meticulously assembled locally by our expert team, ensuring exceptional quality and attention to detail. We offer premium road bikes built with top-tier components, with paint customization options available to match your personal style.
+            Each RIFT bike is meticulously assembled locally by our expert team, ensuring exceptional quality and attention to detail. Every bike features <strong className="text-rift-gold">Shimano Ultegra gears</strong> and is constructed with <strong className="text-rift-gold">aerospace-grade T1000 carbon fiber</strong>, delivering uncompromising performance and durability.
           </p>
+          
+          <div className="bg-rift-royal/20 border border-rift-gold/30 rounded-lg p-4 mt-4">
+            <p className="text-white/90 text-sm">
+              <strong className="text-rift-gold">Paint Options:</strong> Standard paint is included. Holographic paint is available as the only custom option. Custom paint jobs require additional wait time - please discuss timeline during order confirmation.
+            </p>
+          </div>
           
           <div className="border-t border-rift-emerald pt-6">
             <h2 className="text-2xl font-bold text-rift-gold mb-4">Warranty</h2>
@@ -22,8 +28,9 @@ export default function AboutPage() {
               <ul className="space-y-2 ml-4">
                 <li>✓ <strong>Lifetime warranty on frame</strong> - Your RIFT frame is guaranteed for life against manufacturing defects</li>
                 <li>✓ <strong>1 year warranty on all other components</strong> - All components are covered for one year from purchase date</li>
-                <li>✓ <strong>Premium components as standard</strong> - Top-tier components included with every bike</li>
-                <li>✓ <strong>Paint customization available</strong> - Personalize your bike with custom paint options</li>
+                <li>✓ <strong>Shimano Ultegra gears</strong> - Premium shifting performance as standard</li>
+                <li>✓ <strong>Aerospace-grade T1000 carbon</strong> - Lightweight, strong frame construction</li>
+                <li>✓ <strong>Holographic paint option</strong> - Available with additional wait time for custom finish</li>
                 <li>✓ <strong>Local assembly</strong> - Expertly assembled by our team for quality assurance</li>
               </ul>
               <p className="text-sm text-white/60 mt-4">
