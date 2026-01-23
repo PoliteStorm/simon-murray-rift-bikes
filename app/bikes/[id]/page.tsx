@@ -99,7 +99,8 @@ export default function BikeDetailPage() {
             {/* Main Image/Video */}
             <div className="rift-card overflow-hidden">
               <div className="aspect-square bg-gradient-to-br from-rift-royal to-emerald-950 flex items-center justify-center relative">
-                {bike.videoUrl && !isRiftClimb ? (
+                {/* For RIFT Climb: Always show video if available, no images */}
+                {isRiftClimb && bike.videoUrl ? (
                   <video
                     key={bike.id}
                     className="w-full h-full object-cover"
@@ -112,7 +113,8 @@ export default function BikeDetailPage() {
                   >
                     <source src={bike.videoUrl} type="video/mp4" />
                   </video>
-                ) : isRiftClimb && bike.videoUrl ? (
+                ) : bike.videoUrl && !isRiftClimb ? (
+                  /* For other bikes: Show video if available */
                   <video
                     key={bike.id}
                     className="w-full h-full object-cover"
@@ -126,6 +128,7 @@ export default function BikeDetailPage() {
                     <source src={bike.videoUrl} type="video/mp4" />
                   </video>
                 ) : bike.imageUrl && !isRiftClimb ? (
+                  /* For other bikes: Show image if no video */
                   <>
                     <img src={bike.imageUrl} alt={bike.name} className="w-full h-full object-contain" />
                     {isRiftRapid && (
@@ -133,6 +136,7 @@ export default function BikeDetailPage() {
                     )}
                   </>
                 ) : (
+                  /* Placeholder if no media */
                   <div className="text-center p-8">
                     <div className="w-32 h-32 border-2 border-rift-gold/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                       <svg className="w-16 h-16 text-rift-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
