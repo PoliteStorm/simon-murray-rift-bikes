@@ -16,17 +16,30 @@ function SuccessContent() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h2 className="text-3xl font-bold text-rift-gold mb-4">Payment Successful!</h2>
+        <h2 className="text-3xl font-bold text-rift-gold mb-4">Order Confirmed!</h2>
         <p className="text-white/90 mb-4 text-lg">
-          Your £500 deposit has been processed successfully.
+          Your order has been received successfully.
         </p>
         {orderId && (
           <p className="text-white/70 text-sm mb-6">
             Order ID: #{orderId}
           </p>
         )}
-        <p className="text-white/70 text-sm mb-8">
-          We'll contact you shortly to discuss your custom bike specifications and delivery timeline.
+        <div className="bg-rift-royal/30 border border-rift-emerald/50 rounded-xl p-4 mb-6">
+          <p className="text-white/90 text-sm mb-2">
+            <strong className="text-rift-gold">Next Steps:</strong>
+          </p>
+          <p className="text-white/70 text-sm">
+            Simon Murray will contact you shortly via email or phone to:
+          </p>
+          <ul className="text-white/70 text-sm mt-2 ml-4 space-y-1">
+            <li>• Provide bank transfer details for your deposit</li>
+            <li>• Discuss your custom bike specifications</li>
+            <li>• Confirm delivery timeline</li>
+          </ul>
+        </div>
+        <p className="text-white/60 text-xs mb-8">
+          Please keep your order ID for reference. You will receive an email confirmation shortly.
         </p>
         <div className="flex gap-4 justify-center">
           <Link href="/bikes" className="rift-button">

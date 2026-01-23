@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import PartnerLogos from '@/components/PartnerLogos';
 
 interface Bike {
   id: number;
@@ -62,6 +63,9 @@ export default function BikeDetailPage() {
     );
   }
 
+  const isRiftRapid = bike.name === 'Rift Rapid';
+  const isRiftClimb = bike.name === 'RIFT Climb';
+
   return (
     <div className="flex-1 py-12 bg-rift-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,35 +74,63 @@ export default function BikeDetailPage() {
         </Link>
         
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          {/* Image/Video */}
-          <div className="rift-card overflow-hidden">
-            <div className="aspect-square bg-gradient-to-br from-rift-royal to-emerald-950 flex items-center justify-center">
-              {bike.videoUrl ? (
-                <video
-                  key={bike.id}
-                  className="w-full h-full object-cover"
-                  controls
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  style={{ maxHeight: '100%', maxWidth: '100%' }}
-                >
-                  <source src={bike.videoUrl} type="video/mp4" />
-                </video>
-              ) : bike.imageUrl ? (
-                <img src={bike.imageUrl} alt={bike.name} className="w-full h-full object-contain" />
-              ) : (
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 border-2 border-rift-gold/30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-rift-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+          {/* Image/Video Gallery */}
+          <div className="space-y-4">
+            {/* Main Image/Video */}
+            <div className="rift-card overflow-hidden">
+              <div className="aspect-square bg-gradient-to-br from-rift-royal to-emerald-950 flex items-center justify-center relative">
+                {bike.videoUrl ? (
+                  <video
+                    key={bike.id}
+                    className="w-full h-full object-cover"
+                    controls
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{ maxHeight: '100%', maxWidth: '100%' }}
+                  >
+                    <source src={bike.videoUrl} type="video/mp4" />
+                  </video>
+                ) : bike.imageUrl && !isRiftClimb ? (
+                  <>
+                    <img src={bike.imageUrl} alt={bike.name} className="w-full h-full object-contain" />
+                    {isRiftRapid && (
+                      <div className="absolute top-4 right-4 w-16 h-16 bg-white z-10"></div>
+                    )}
+                  </>
+                ) : (
+                  <div className="text-center p-8">
+                    <div className="w-32 h-32 border-2 border-rift-gold/30 rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-rift-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <p className="text-rift-gold/70 text-sm">Image Coming Soon</p>
                   </div>
-                  <p className="text-rift-gold/70 text-sm">Image Coming Soon</p>
-                </div>
-              )}
+                )}
+              </div>
             </div>
+            
+            {/* Image Gallery Thumbnails */}
+            {specs && specs.images && Array.isArray(specs.images) && specs.images.length > 1 && !isRiftRapid && !isRiftClimb && (
+              <div className="grid grid-cols-3 gap-2">
+                {specs.images.slice(0, 6).map((img: string, idx: number) => (
+                  <div key={idx} className="rift-card overflow-hidden aspect-square cursor-pointer hover:border-rift-gold transition-all">
+                    <img src={img} alt={`${bike.name} ${idx + 1}`} className="w-full h-full object-cover" />
+                  </div>
+                ))}
+              </div>
+            )}
+            {/* For Rift Rapid, only show first image with white overlay */}
+            {isRiftRapid && specs && specs.images && Array.isArray(specs.images) && specs.images.length > 0 && (
+              <div className="grid grid-cols-3 gap-2">
+                <div className="rift-card overflow-hidden aspect-square cursor-pointer hover:border-rift-gold transition-all relative">
+                  <img src={specs.images[0]} alt={`${bike.name} 1`} className="w-full h-full object-cover" />
+                  <div className="absolute top-2 right-2 w-12 h-12 bg-white z-10"></div>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Bike Info */}
@@ -116,23 +148,66 @@ export default function BikeDetailPage() {
               <div className="text-4xl font-bold text-rift-gold mb-2">£{bike.basePrice.toLocaleString()}</div>
               <div className="text-white/80 text-sm mb-4">✓ In Stock - Test Ride Available</div>
             </div>
+            
+            {/* Paint Options */}
+            <div className="mb-6">
+              <h3 className="text-lg font-bold text-white mb-3">Paint Options</h3>
+              <div className="space-y-2">
+                <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
+                  <input
+                    type="checkbox"
+                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
+                  />
+                  <div className="flex-1">
+                    <div className="text-white font-semibold text-sm">Standard Paint</div>
+                    <div className="text-white/60 text-xs">Included</div>
+                  </div>
+                  <div className="text-rift-gold font-bold text-sm">£0</div>
+                </label>
+                <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
+                  <input
+                    type="checkbox"
+                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
+                  />
+                  <div className="flex-1">
+                    <div className="text-white font-semibold text-sm">Holographic Paint</div>
+                    <div className="text-white/60 text-xs">Premium color-shifting finish</div>
+                  </div>
+                  <div className="text-rift-gold font-bold text-sm">+£500</div>
+                </label>
+                <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
+                  <input
+                    type="checkbox"
+                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
+                  />
+                  <div className="flex-1">
+                    <div className="text-white font-semibold text-sm">3K Gloss Black</div>
+                    <div className="text-white/60 text-xs">Premium carbon fiber finish</div>
+                  </div>
+                  <div className="text-rift-gold font-bold text-sm">+£300</div>
+                </label>
+                <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
+                  <input
+                    type="checkbox"
+                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
+                  />
+                  <div className="flex-1">
+                    <div className="text-white font-semibold text-sm">3K Gloss Green</div>
+                    <div className="text-white/60 text-xs">Premium carbon fiber finish</div>
+                  </div>
+                  <div className="text-rift-gold font-bold text-sm">+£300</div>
+                </label>
+              </div>
+            </div>
+            
             <div className="space-y-3 mb-6">
-              <Link 
-                href={`/order?bikeId=${bike.id}`}
-                className="block w-full rift-button text-center"
-              >
-                Buy Now
-              </Link>
-              <Link 
-                href={`/order?bikeId=${bike.id}`}
-                className="block w-full rift-button-secondary text-center"
-              >
-                Full Customization
+              <Link href={`/checkout?bikeId=${bike.id}`} className="block w-full rift-button text-center">
+                Order Now
               </Link>
             </div>
             <div className="text-white/60 text-sm space-y-1">
               <p>Standard spec bikes ship immediately.</p>
-              <p>Custom builds in 30-40 days.</p>
+              <p>Contact us for custom builds.</p>
             </div>
           </div>
         </div>
@@ -142,17 +217,30 @@ export default function BikeDetailPage() {
           <div className="bg-rift-card border border-rift-emerald rounded-lg p-8">
             <h2 className="text-2xl font-bold text-white mb-6">Specifications</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              {Object.entries(specs).map(([key, value]) => (
-                <div key={key} className="border-b border-rift-emerald pb-2">
-                  <div className="text-rift-gold font-semibold text-sm mb-1">
-                    {key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-                  </div>
-                  <div className="text-white/80 text-sm">{String(value)}</div>
-                </div>
-              ))}
+              {Object.entries(specs)
+                .filter(([key]) => key !== 'specFile' && key !== 'model' && key !== 'images' && key !== 'undefined')
+                .map(([key, value]) => {
+                  const displayKey = key
+                    .replace(/([A-Z])/g, ' $1')
+                    .replace(/^./, str => str.toUpperCase())
+                    .trim();
+                  return (
+                    <div key={key} className="border-b border-rift-emerald/30 pb-3">
+                      <div className="text-rift-gold font-semibold text-sm mb-1">
+                        {displayKey}
+                      </div>
+                      <div className="text-white/80 text-sm">{String(value)}</div>
+                    </div>
+                  );
+                })}
             </div>
           </div>
         )}
+
+        {/* Partner Logos */}
+        <div className="mt-8">
+          <PartnerLogos variant="compact" />
+        </div>
       </div>
     </div>
   );

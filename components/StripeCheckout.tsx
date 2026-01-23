@@ -40,7 +40,7 @@ function CheckoutForm({ amount, orderId, customerEmail, onSuccess, onCancel }: S
     const { error: confirmError } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `${window.location.origin}/order/success?orderId=${orderId}`,
+        return_url: `${window.location.origin}/bikes?orderId=${orderId}`,
       },
       redirect: 'if_required',
     });

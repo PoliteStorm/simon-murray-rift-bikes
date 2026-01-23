@@ -90,5 +90,17 @@
     text-shadow: 0 0 10px rgba(251, 191, 36, 0.3), 0 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
   }
+  
+  /* Partner logo styling - ensure transparent backgrounds display properly */
+  .partner-logo {
+    background: transparent !important;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  .partner-logo img {
+    background: transparent !important;
+    mix-blend-mode: normal;
+  }
 }
 
