@@ -74,9 +74,16 @@ export default function BikesPage() {
     try {
       const response = await fetch('/api/bikes');
       const data = await response.json();
-      setBikes(data);
+      // Ensure data is always an array
+      if (Array.isArray(data)) {
+        setBikes(data);
+      } else {
+        console.error('Invalid bikes data:', data);
+        setBikes([]);
+      }
     } catch (error) {
       console.error('Error fetching bikes:', error);
+      setBikes([]);
     } finally {
       setLoading(false);
     }

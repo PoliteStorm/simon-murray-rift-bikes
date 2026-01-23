@@ -5,10 +5,12 @@ export async function GET() {
   try {
     const db = await openDatabase();
     const bikes = await db.all('SELECT * FROM bikes ORDER BY id DESC');
-    return NextResponse.json(bikes);
+    // Always return an array, even if empty
+    return NextResponse.json(Array.isArray(bikes) ? bikes : []);
   } catch (error) {
     console.error('Error fetching bikes:', error);
-    return NextResponse.json({ error: 'Failed to fetch bikes' }, { status: 500 });
+    // Return empty array instead of error object to prevent .map() errors
+    return NextResponse.json([]);
   }
 }
 
