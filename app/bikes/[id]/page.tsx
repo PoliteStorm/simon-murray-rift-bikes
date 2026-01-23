@@ -110,8 +110,15 @@ export default function BikeDetailPage() {
                     muted
                     playsInline
                     style={{ maxHeight: '100%', maxWidth: '100%' }}
+                    onError={(e) => {
+                      console.error('Video failed to load:', bike.videoUrl, e);
+                    }}
+                    onLoadStart={() => {
+                      console.log('Video loading:', bike.videoUrl);
+                    }}
                   >
                     <source src={bike.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
                   </video>
                 ) : bike.videoUrl && !isRiftClimb ? (
                   /* For other bikes: Show video if available */
