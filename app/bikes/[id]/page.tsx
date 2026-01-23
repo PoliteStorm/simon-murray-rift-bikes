@@ -209,7 +209,7 @@ export default function BikeDetailPage() {
                     <div className="text-white font-semibold text-sm">Holographic Paint</div>
                     <div className="text-white/60 text-xs">Premium color-shifting finish - Additional wait time required</div>
                   </div>
-                  <div className="text-rift-gold font-bold text-sm">+£500</div>
+                  <div className="text-rift-gold font-bold text-sm">+£250</div>
                 </label>
               </div>
               <div className="mt-3 bg-rift-royal/20 border border-rift-gold/30 rounded-lg p-3">
