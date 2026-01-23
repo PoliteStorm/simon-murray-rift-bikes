@@ -32,13 +32,33 @@ export default function BikeDetailPage() {
   const fetchBike = async (id: number) => {
     try {
       const response = await fetch(`/api/bikes/${id}`);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch bike: ${response.status}`);
+      }
       const data = await response.json();
+      
+      // Check if response is an error object
+      if (data.error) {
+        throw new Error(data.error);
+      }
+      
+      // Ensure required fields exist
+      if (!data || !data.name || data.basePrice === undefined) {
+        throw new Error('Invalid bike data received');
+      }
+      
       setBike(data);
       if (data.specifications) {
-        setSpecs(JSON.parse(data.specifications));
+        try {
+          setSpecs(JSON.parse(data.specifications));
+        } catch (parseError) {
+          console.error('Error parsing specifications:', parseError);
+          setSpecs(null);
+        }
       }
     } catch (error) {
       console.error('Error fetching bike:', error);
+      setBike(null);
     } finally {
       setLoading(false);
     }
@@ -63,7 +83,7 @@ export default function BikeDetailPage() {
     );
   }
 
-  const isRiftRapid = bike.name === 'Rift Rapid';
+  const isRiftRapid = bike.name === 'RIFT Rapid' || bike.name === 'Rift Rapid';
   const isRiftClimb = bike.name === 'RIFT Climb';
 
   return (
@@ -79,7 +99,20 @@ export default function BikeDetailPage() {
             {/* Main Image/Video */}
             <div className="rift-card overflow-hidden">
               <div className="aspect-square bg-gradient-to-br from-rift-royal to-emerald-950 flex items-center justify-center relative">
-                {bike.videoUrl ? (
+                {bike.videoUrl && !isRiftClimb ? (
+                  <video
+                    key={bike.id}
+                    className="w-full h-full object-cover"
+                    controls
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{ maxHeight: '100%', maxWidth: '100%' }}
+                  >
+                    <source src={bike.videoUrl} type="video/mp4" />
+                  </video>
+                ) : isRiftClimb && bike.videoUrl ? (
                   <video
                     key={bike.id}
                     className="w-full h-full object-cover"
@@ -145,7 +178,9 @@ export default function BikeDetailPage() {
             </div>
             <p className="text-white/80 mb-6">{bike.description}</p>
             <div className="mb-6">
-              <div className="text-4xl font-bold text-rift-gold mb-2">£{bike.basePrice.toLocaleString()}</div>
+              <div className="text-4xl font-bold text-rift-gold mb-2">
+                £{bike.basePrice ? bike.basePrice.toLocaleString() : 'N/A'}
+              </div>
               <div className="text-white/80 text-sm mb-4">✓ In Stock - Test Ride Available</div>
             </div>
             

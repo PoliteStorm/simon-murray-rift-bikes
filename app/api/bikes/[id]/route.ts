@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { openDatabase } from '@/lib/db';
+import { initialBikes } from '@/lib/bikes-data';
 
 export async function GET(
   request: NextRequest,
@@ -9,13 +10,31 @@ export async function GET(
     const db = await openDatabase();
     const bike = await db.get('SELECT * FROM bikes WHERE id = ?', [params.id]);
     
-    if (!bike) {
-      return NextResponse.json({ error: 'Bike not found' }, { status: 404 });
+    if (bike) {
+      return NextResponse.json(bike);
     }
     
-    return NextResponse.json(bike);
+    // If database is empty or bike not found, check fallback data
+    const bikeId = parseInt(params.id);
+    const fallbackBike = initialBikes.find(b => b.id === bikeId);
+    
+    if (fallbackBike) {
+      console.log('Returning bike from fallback data:', bikeId);
+      return NextResponse.json(fallbackBike);
+    }
+    
+    return NextResponse.json({ error: 'Bike not found' }, { status: 404 });
   } catch (error) {
     console.error('Error fetching bike:', error);
+    // Try fallback data on error
+    const bikeId = parseInt(params.id);
+    const fallbackBike = initialBikes.find(b => b.id === bikeId);
+    
+    if (fallbackBike) {
+      console.log('Error occurred, returning bike from fallback data:', bikeId);
+      return NextResponse.json(fallbackBike);
+    }
+    
     return NextResponse.json({ error: 'Failed to fetch bike' }, { status: 500 });
   }
 }

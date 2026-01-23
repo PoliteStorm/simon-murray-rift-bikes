@@ -162,7 +162,9 @@ export default function BikesPage() {
                   </div>
                   <p className="text-white/70 mb-4 text-sm leading-relaxed">{bike.description}</p>
                   <div className="flex justify-between items-center pt-4 border-t border-rift-emerald/30">
-                    <span className="text-2xl font-bold text-rift-gold">£{bike.basePrice.toLocaleString()}</span>
+                    <span className="text-2xl font-bold text-rift-gold">
+                      £{bike.basePrice ? bike.basePrice.toLocaleString() : 'N/A'}
+                    </span>
                     <span className="text-sm text-white/60 flex items-center gap-1">
                       <svg className="w-4 h-4 text-rift-gold" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
