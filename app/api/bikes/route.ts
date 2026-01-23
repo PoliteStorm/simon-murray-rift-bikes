@@ -1,16 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { openDatabase } from '@/lib/db';
+import { initialBikes } from '@/lib/bikes-data';
 
 export async function GET() {
   try {
     const db = await openDatabase();
     const bikes = await db.all('SELECT * FROM bikes ORDER BY id DESC');
-    // Always return an array, even if empty
-    return NextResponse.json(Array.isArray(bikes) ? bikes : []);
+    
+    // If database is empty or error, return initial bikes
+    if (!Array.isArray(bikes) || bikes.length === 0) {
+      console.log('Database empty or unavailable, returning initial bikes');
+      return NextResponse.json(initialBikes);
+    }
+    
+    return NextResponse.json(bikes);
   } catch (error) {
-    console.error('Error fetching bikes:', error);
-    // Return empty array instead of error object to prevent .map() errors
-    return NextResponse.json([]);
+    console.error('Error fetching bikes from database:', error);
+    // Return initial bikes as fallback
+    console.log('Returning initial bikes as fallback');
+    return NextResponse.json(initialBikes);
   }
 }
 
