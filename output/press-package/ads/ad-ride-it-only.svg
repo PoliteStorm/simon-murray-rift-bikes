@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+    
+    
+        
+        <defs>
+            <radialGradient id="ride-bg" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" style="stop-color:#0d4d3f;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0a1f1a;stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        <rect width="1200" height="800" fill="url(#ride-bg)"/>
+        
+        
+        <g>
+            
+        <path d="M555.0 385.0 L835.0 385.0" stroke="#fbbf24" stroke-width="10.5" stroke-linecap="square"/>
+        <path d="M572.5 490.0 L817.5 490.0" stroke="#fbbf24" stroke-width="10.5" stroke-linecap="square"/>
+        <path d="M590.0 595.0 L800.0 595.0" stroke="#fbbf24" stroke-width="10.5" stroke-linecap="square"/>
+        
+            
+        <!-- Top crack with chain elements -->
+        <path d="M607.5 332.5 L618.0 385.0" stroke="#fbbf24" stroke-width="8.75" stroke-linecap="square"/>
+        <path d="M782.5 332.5 L772.0 385.0" stroke="#fbbf24" stroke-width="8.75" stroke-linecap="square"/>
+        <!-- Chain link in top crack -->
+        <circle cx="612.75" cy="358.75" r="10.5" fill="none" stroke="#fbbf24" stroke-width="5.25"/>
+        <circle cx="777.25" cy="358.75" r="10.5" fill="none" stroke="#fbbf24" stroke-width="5.25"/>
+        
+            
+        <!-- Middle crack with cog elements -->
+        <path d="M625.0 437.5 L635.5 490.0" stroke="#fbbf24" stroke-width="8.75" stroke-linecap="square"/>
+        <path d="M765.0 437.5 L754.5 490.0" stroke="#fbbf24" stroke-width="8.75" stroke-linecap="square"/>
+        <!-- Cog/gear in middle crack -->
+        <g transform="translate(630.25, 463.75)">
+            <circle r="14.0" fill="none" stroke="#fbbf24" stroke-width="5.25"/>
+            <circle r="7.0" fill="#fbbf24"/>
+            <!-- Gear teeth -->
+            <path d="M-14.0 0 L-19.25 -5.25 M14.0 0 L19.25 -5.25" stroke="#fbbf24" stroke-width="4.2" stroke-linecap="round"/>
+            <path d="M0 -14.0 L-5.25 -19.25 M0 14.0 L5.25 19.25" stroke="#fbbf24" stroke-width="4.2" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(759.75, 463.75)">
+            <circle r="14.0" fill="none" stroke="#fbbf24" stroke-width="5.25"/>
+            <circle r="7.0" fill="#fbbf24"/>
+            <path d="M-14.0 0 L-19.25 -5.25 M14.0 0 L19.25 -5.25" stroke="#fbbf24" stroke-width="4.2" stroke-linecap="round"/>
+            <path d="M0 -14.0 L-5.25 -19.25 M0 14.0 L5.25 19.25" stroke="#fbbf24" stroke-width="4.2" stroke-linecap="round"/>
+        </g>
+        
+            
+        <!-- Bottom crack with bike chain -->
+        <path d="M695.0 542.5 L705.5 595.0" stroke="#fbbf24" stroke-width="8.75" stroke-linecap="square"/>
+        <path d="M695.0 542.5 L684.5 595.0" stroke="#fbbf24" stroke-width="8.75" stroke-linecap="square"/>
+        <!-- Chain links in bottom crack -->
+        <g transform="translate(700.25, 568.75)">
+            <rect x="-10.5" y="-7.0" width="21.0" height="14.0" rx="3.5" fill="none" stroke="#fbbf24" stroke-width="5.25"/>
+            <circle cx="-12.25" cy="0" r="5.25" fill="none" stroke="#fbbf24" stroke-width="4.2"/>
+            <circle cx="12.25" cy="0" r="5.25" fill="none" stroke="#fbbf24" stroke-width="4.2"/>
+        </g>
+        
+            
+        <path d="M576.0 315.0 L583.0 329.0" stroke="#fbbf24" stroke-width="5.25" stroke-linecap="square" opacity="0.7"/>
+        <path d="M632.0 315.0 L625.0 329.0" stroke="#fbbf24" stroke-width="5.25" stroke-linecap="square" opacity="0.7"/>
+        
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 530.0 470.0 L 530.0 370.0
+            L 571.6666666666666 370.0 L 580.0 395.0
+            L 571.6666666666666 420.0 L 530.0 420.0
+            M 550.0 420.0 L 580.0 470.0
+        " stroke="#ffffff" stroke-width="13.333333333333334" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="
+            M 613.3333333333334 370.0 L 613.3333333333334 470.0
+            M 596.6666666666666 370.0 L 630.0 370.0
+            M 596.6666666666666 470.0 L 630.0 470.0
+        " stroke="#ffffff" stroke-width="13.333333333333334" 
+                  fill="none" stroke-linecap="square"/>
+            <path d="
+            M 663.3333333333334 470.0 L 663.3333333333334 370.0
+            L 713.3333333333334 370.0
+            M 663.3333333333334 416.6666666666667 L 705.0 416.6666666666667
+        " stroke="#ffffff" stroke-width="13.333333333333334" 
+                  fill="none" stroke-linecap="square"/>
+            <path d="
+            M 738.3333333333334 370.0 L 805.0 370.0
+            M 771.6666666666667 370.0 L 771.6666666666667 470.0
+        " stroke="#ffffff" stroke-width="13.333333333333334" 
+                  fill="none" stroke-linecap="square"/>
+        </g>
+        
+        
+        <text x="600.0" y="550.0" font-family="system-ui, sans-serif" font-size="96" 
+              font-weight="900" fill="#fbbf24" text-anchor="middle" letter-spacing="0.25em">
+            RIDE IT
+        </text>
+        
+        
+</svg>

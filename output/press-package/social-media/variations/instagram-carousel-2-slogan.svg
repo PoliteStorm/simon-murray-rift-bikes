@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+    
+        <rect width="1080" height="1080" fill="#0a1f1a"/>
+        
+        <text x="540.0" y="480.0" font-family="system-ui, sans-serif" font-size="42" 
+              font-weight="700" fill="#ffffff" text-anchor="middle" opacity="0.9">
+            I can, you can, we can
+        </text>
+        <text x="540.0" y="580.0" font-family="system-ui, sans-serif" font-size="96" 
+              font-weight="900" fill="#fbbf24" text-anchor="middle" letter-spacing="0.25em">
+            RIDE IT
+        </text>
+        
+        
+        <g transform="translate(960, 40)">
+            <path d="M12.0 36.0 L108.0 36.0" stroke="#fbbf24" stroke-width="3.5999999999999996" stroke-linecap="square"/>
+            <path d="M18.0 72.0 L102.0 72.0" stroke="#fbbf24" stroke-width="3.5999999999999996" stroke-linecap="square"/>
+            <path d="M24.0 108.0 L96.0 108.0" stroke="#fbbf24" stroke-width="3.5999999999999996" stroke-linecap="square"/>
+            <path d="M30.0 18.0 L33.6 36.0" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+            <circle cx="31.799999999999997" cy="27.0" r="3.5999999999999996" fill="none" stroke="#fbbf24" stroke-width="1.7999999999999998"/>
+            <path d="M36.0 54.0 L39.6 72.0" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+            <g transform="translate(37.8, 63.0)">
+                <circle r="4.8" fill="none" stroke="#fbbf24" stroke-width="1.7999999999999998"/>
+                <circle r="2.4" fill="#fbbf24"/>
+            </g>
+            <path d="M60.0 90.0 L63.599999999999994 108.0 M60.0 90.0 L56.4 108.0" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+        </g>
+        
+        
+</svg>

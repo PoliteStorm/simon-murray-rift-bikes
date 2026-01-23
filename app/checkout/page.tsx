@@ -2,7 +2,7 @@
 
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Suspense, useEffect, useState } from 'react';
-import BankTransferCheckout from '@/components/BankTransferCheckout';
+import BankTransferCheckoutForm from '@/components/BankTransferCheckoutForm';
 
 function CheckoutContent() {
   const searchParams = useSearchParams();
@@ -55,7 +55,7 @@ function CheckoutContent() {
     <div className="flex-1 py-12 bg-rift-dark">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-white mb-8">Checkout</h1>
-        <BankTransferCheckout
+        <BankTransferCheckoutForm
           bikeId={bike.id}
           bikeName={bike.name}
           basePrice={bike.basePrice}

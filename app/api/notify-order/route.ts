@@ -20,12 +20,12 @@ export async function POST(request: NextRequest) {
     console.log('=============================');
 
     // TODO: In production, implement:
-    // - Email to Simon Murray (simon.murray@riftbike.com)
-    // - SMS notification (if phone number available)
+    // - Email to si@riftbike.com
+    // - SMS notification to 07817174391
     // - Admin dashboard notification
     // Example email service:
     // await sendEmail({
-    //   to: 'simon.murray@riftbike.com',
+    //   to: 'si@riftbike.com',
     //   subject: `New Order #${orderId} - ${customerName}`,
     //   body: message
     // });

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+    
+    
+        
+        <g>
+            
+        <path d="M30.0 50.0 L110.0 50.0" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+        <path d="M35.0 80.0 L105.0 80.0" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+        <path d="M40.0 110.0 L100.0 110.0" stroke="#fbbf24" stroke-width="3.0" stroke-linecap="square"/>
+        
+            
+        <!-- Top crack with chain elements -->
+        <path d="M45.0 35.0 L48.0 50.0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        <path d="M95.0 35.0 L92.0 50.0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        <!-- Chain link in top crack -->
+        <circle cx="46.5" cy="42.5" r="3.0" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+        <circle cx="93.5" cy="42.5" r="3.0" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+        
+            
+        <!-- Middle crack with cog elements -->
+        <path d="M50.0 65.0 L53.0 80.0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        <path d="M90.0 65.0 L87.0 80.0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        <!-- Cog/gear in middle crack -->
+        <g transform="translate(51.5, 72.5)">
+            <circle r="4.0" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+            <circle r="2.0" fill="#fbbf24"/>
+            <!-- Gear teeth -->
+            <path d="M-4.0 0 L-5.5 -1.5 M4.0 0 L5.5 -1.5" stroke="#fbbf24" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M0 -4.0 L-1.5 -5.5 M0 4.0 L1.5 5.5" stroke="#fbbf24" stroke-width="1.2" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(88.5, 72.5)">
+            <circle r="4.0" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+            <circle r="2.0" fill="#fbbf24"/>
+            <path d="M-4.0 0 L-5.5 -1.5 M4.0 0 L5.5 -1.5" stroke="#fbbf24" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M0 -4.0 L-1.5 -5.5 M0 4.0 L1.5 5.5" stroke="#fbbf24" stroke-width="1.2" stroke-linecap="round"/>
+        </g>
+        
+            
+        <!-- Bottom crack with bike chain -->
+        <path d="M70.0 95.0 L73.0 110.0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        <path d="M70.0 95.0 L67.0 110.0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="square"/>
+        <!-- Chain links in bottom crack -->
+        <g transform="translate(71.5, 102.5)">
+            <rect x="-3.0" y="-2.0" width="6.0" height="4.0" rx="1.0" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+            <circle cx="-3.5" cy="0" r="1.5" fill="none" stroke="#fbbf24" stroke-width="1.2"/>
+            <circle cx="3.5" cy="0" r="1.5" fill="none" stroke="#fbbf24" stroke-width="1.2"/>
+        </g>
+        
+            
+        <path d="M36.0 30.0 L38.0 34.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="square" opacity="0.7"/>
+        <path d="M52.0 30.0 L50.0 34.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="square" opacity="0.7"/>
+        
+        </g>
+        
+        
+        <g>
+            <path d="
+            M 120.0 80.0 L 120.0 30.0
+            L 140.83333333333334 30.0 L 145.0 42.5
+            L 140.83333333333334 55.0 L 120.0 55.0
+            M 130.0 55.0 L 145.0 80.0
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="
+            M 161.66666666666669 30.0 L 161.66666666666669 80.0
+            M 153.33333333333334 30.0 L 170.0 30.0
+            M 153.33333333333334 80.0 L 170.0 80.0
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square"/>
+            <path d="
+            M 186.66666666666669 80.0 L 186.66666666666669 30.0
+            L 211.66666666666669 30.0
+            M 186.66666666666669 53.333333333333336 L 207.5 53.333333333333336
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square"/>
+            <path d="
+            M 224.16666666666669 30.0 L 257.5 30.0
+            M 240.83333333333334 30.0 L 240.83333333333334 80.0
+        " stroke="#ffffff" stroke-width="6.666666666666667" 
+                  fill="none" stroke-linecap="square"/>
+        </g>
+        
+        
+</svg>

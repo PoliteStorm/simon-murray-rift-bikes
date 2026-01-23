@@ -30,7 +30,7 @@ function SuccessContent() {
             <strong className="text-rift-gold">Next Steps:</strong>
           </p>
           <p className="text-white/70 text-sm">
-            Simon Murray will contact you shortly via email or phone to:
+            You will be contacted shortly at <strong>si@riftbike.com</strong> or <strong>07817174391</strong> to:
           </p>
           <ul className="text-white/70 text-sm mt-2 ml-4 space-y-1">
             <li>• Provide bank transfer details for your deposit</li>

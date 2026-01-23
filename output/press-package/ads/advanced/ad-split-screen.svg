@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+    
+        <defs>
+            <linearGradient id="split-left" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#0a1f1a;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0d4d3f;stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="split-right" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#0d4d3f;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0a1f1a;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="600.0" height="800" fill="url(#split-left)"/>
+        <rect x="600.0" y="0" width="600.0" height="800" fill="url(#split-right)"/>
+        
+        <!-- Left side: Logo -->
+        
+        <g transform="translate(250.0, 340.0)">
+            <!-- Main lines -->
+            <path d="M25.0 75.0 L225.0 75.0" stroke="#fbbf24" stroke-width="7.5" stroke-linecap="square"/>
+            <path d="M37.5 150.0 L212.5 150.0" stroke="#fbbf24" stroke-width="7.5" stroke-linecap="square"/>
+            <path d="M50.0 225.0 L200.0 225.0" stroke="#fbbf24" stroke-width="7.5" stroke-linecap="square"/>
+            <!-- Cracks with bike elements -->
+            <path d="M62.5 37.5 L70.0 75.0" stroke="#fbbf24" stroke-width="6.25" stroke-linecap="square"/>
+            <circle cx="66.25" cy="56.25" r="7.5" fill="none" stroke="#fbbf24" stroke-width="3.75"/>
+            <path d="M75.0 112.5 L82.5 150.0" stroke="#fbbf24" stroke-width="6.25" stroke-linecap="square"/>
+            <g transform="translate(78.75, 131.25)">
+                <circle r="10.0" fill="none" stroke="#fbbf24" stroke-width="3.75"/>
+                <circle r="5.0" fill="#fbbf24"/>
+            </g>
+            <path d="M125.0 187.5 L132.5 225.0 M125.0 187.5 L117.5 225.0" stroke="#fbbf24" stroke-width="6.25" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="M 260.0 450.0 L 260.0 380.0 L 289.1666666666667 380.0 L 295.0 397.5 L 289.1666666666667 415.0 L 260.0 415.0 M 274.0 415.0 L 295.0 450.0" stroke="#ffffff" stroke-width="9.333333333333334" fill="none" stroke-linecap="square"/>
+            <path d="M 318.3333333333333 380.0 L 318.3333333333333 450.0 M 306.6666666666667 380.0 L 330.0 380.0 M 306.6666666666667 450.0 L 330.0 450.0" stroke="#ffffff" stroke-width="9.333333333333334" fill="none" stroke-linecap="square"/>
+            <path d="M 353.33333333333337 450.0 L 353.33333333333337 380.0 L 388.33333333333337 380.0 M 353.33333333333337 412.6666666666667 L 382.5 412.6666666666667" stroke="#ffffff" stroke-width="9.333333333333334" fill="none" stroke-linecap="square"/>
+            <path d="M 405.83333333333337 380.0 L 452.5 380.0 M 429.1666666666667 380.0 L 429.1666666666667 450.0" stroke="#ffffff" stroke-width="9.333333333333334" fill="none" stroke-linecap="square"/>
+        </g>
+        
+        
+        <!-- Right side: Slogan -->
+        <text x="900.0" y="360.0" font-family="system-ui, sans-serif" font-size="48" 
+              font-weight="700" fill="#fbbf24" text-anchor="middle" letter-spacing="0.1em">
+            I can, you can, we can
+        </text>
+        <text x="900.0" y="440.0" font-family="system-ui, sans-serif" font-size="72" 
+              font-weight="900" fill="#fbbf24" text-anchor="middle" letter-spacing="0.25em">
+            RIDE IT
+        </text>
+        
+</svg>

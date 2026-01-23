@@ -42,6 +42,33 @@ PPICS/**/*.mp4
 PPICS/**/*.mov
 PPICS/VIDS/*.mp4
 PPICS/VIDS/*.mov
-
-
 rift-em19.mp4
+
+# Large zip files and extracts
+*.zip
+drive-download-*.zip
+new_bikes_extract/
+temp_extract/
+organized_bikes/
+organized_bikes_refined/# Large image files (keep only necessary ones)
+*.png
+*.jpg
+*.jpeg
+!public/**/*.png
+!public/**/*.jpg
+!public/**/*.jpeg
+!public/favicon.ico
+
+# Database files
+rift.db
+*.db-journal
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Netlify
+.netlify/

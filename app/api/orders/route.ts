@@ -21,8 +21,8 @@ export async function POST(request: NextRequest) {
       ]
     );
 
-    // Log order for Simon Murray to contact customer
-    console.log('=== NEW ORDER - CONTACT SIMON MURRAY ===');
+    // Log order for contact
+    console.log('=== NEW ORDER - CONTACT REQUIRED ===');
     console.log(`Order ID: ${result.lastID}`);
     console.log(`Customer: ${customerInfo.name}`);
     console.log(`Email: ${customerInfo.email}`);
@@ -30,6 +30,7 @@ export async function POST(request: NextRequest) {
     console.log(`Bike ID: ${bikeId}`);
     console.log(`Deposit Required: £${deposit}`);
     console.log(`Total Price: £${totalPrice}`);
+    console.log(`Contact: si@riftbike.com or 07817174391`);
     console.log('==========================================');
 
     return NextResponse.json({ id: result.lastID, success: true }, { status: 201 });

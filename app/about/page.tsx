@@ -40,11 +40,11 @@ export default function AboutPage() {
               <ul className="space-y-2 ml-4">
                 <li>✓ <strong>Deposit required</strong> - A deposit is required to confirm your order and begin the build process</li>
                 <li>✓ <strong>Bank transfer payment</strong> - We accept payments via bank transfer</li>
-                <li>✓ <strong>Order confirmation</strong> - Once your order is confirmed, Simon Murray will contact you directly to arrange payment details and discuss your custom specifications</li>
+                <li>✓ <strong>Order confirmation</strong> - Once your order is confirmed, you will be contacted directly at <strong>si@riftbike.com</strong> or <strong>07817174391</strong> to arrange payment details and discuss your custom specifications</li>
                 <li>✓ <strong>Balance payment</strong> - Remaining balance is due upon completion, before delivery</li>
               </ul>
               <p className="text-sm text-white/60 mt-4">
-                After placing your order, you will receive confirmation and payment instructions. Simon Murray will be in touch to finalize your bike specifications and delivery timeline.
+                After placing your order, you will receive confirmation and payment instructions. You will be contacted at <strong>si@riftbike.com</strong> or <strong>07817174391</strong> to finalize your bike specifications and delivery timeline.
               </p>
             </div>
           </div>

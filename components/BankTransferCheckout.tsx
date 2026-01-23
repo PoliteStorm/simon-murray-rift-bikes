@@ -88,14 +88,14 @@ export default function BankTransferCheckout({
             <ul className="text-sm space-y-2 ml-4">
               <li>1. Submit your order below</li>
               <li>2. You'll receive order confirmation</li>
-              <li>3. <strong>Simon Murray</strong> will contact you within 24-48 hours</li>
+              <li>3. You will be contacted within 24-48 hours at <strong>si@riftbike.com</strong> or <strong>07817174391</strong></li>
               <li>4. Bank transfer details will be provided</li>
               <li>5. Once deposit is received, your build begins</li>
             </ul>
           </div>
           <div className="bg-rift-dark/50 border border-rift-gold/30 rounded-lg p-4 mt-4">
             <p className="text-sm text-white/90">
-              <strong className="text-rift-gold">Contact:</strong> Simon Murray will be in touch to arrange payment and discuss your custom specifications.
+              <strong className="text-rift-gold">Contact:</strong> si@riftbike.com or 07817174391 - We'll be in touch to arrange payment and discuss your custom specifications.
             </p>
           </div>
         </div>

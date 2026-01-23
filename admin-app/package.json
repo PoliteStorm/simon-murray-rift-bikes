@@ -1,0 +1,49 @@
+{
+  "name": "rift-admin",
+  "version": "1.0.0",
+  "description": "RIFT Admin Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "keywords": ["admin", "rift", "bike"],
+  "author": "RIFT",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6",
+    "sqlite": "^5.1.1"
+  },
+  "build": {
+    "appId": "com.rift.admin",
+    "productName": "RIFT Admin",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "node_modules/sqlite3/**/*",
+      "node_modules/sqlite/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 400" width="1920" height="400">
+    
+        <rect width="1920" height="400" fill="#0a1f1a"/>
+        
+        <g transform="translate(50, 160.0)">
+            <path d="M20.0 60.0 L180.0 60.0" stroke="#fbbf24" stroke-width="6.0" stroke-linecap="square"/>
+            <path d="M30.0 120.0 L170.0 120.0" stroke="#fbbf24" stroke-width="6.0" stroke-linecap="square"/>
+            <path d="M40.0 180.0 L160.0 180.0" stroke="#fbbf24" stroke-width="6.0" stroke-linecap="square"/>
+            <path d="M50.0 30.0 L56.0 60.0" stroke="#fbbf24" stroke-width="5.0" stroke-linecap="square"/>
+            <circle cx="53.0" cy="45.0" r="6.0" fill="none" stroke="#fbbf24" stroke-width="3.0"/>
+            <path d="M60.0 90.0 L66.0 120.0" stroke="#fbbf24" stroke-width="5.0" stroke-linecap="square"/>
+            <g transform="translate(63.0, 105.0)">
+                <circle r="8.0" fill="none" stroke="#fbbf24" stroke-width="3.0"/>
+                <circle r="4.0" fill="#fbbf24"/>
+            </g>
+            <path d="M100.0 150.0 L106.0 180.0 M100.0 150.0 L94.0 180.0" stroke="#fbbf24" stroke-width="5.0" stroke-linecap="square"/>
+        </g>
+        
+        
+        <g>
+            <path d="M 200 230.0 L 200 170.0 L 225.0 170.0 L 230.0 185.0 L 225.0 200.0 L 200 200.0 M 212.0 200.0 L 230.0 230.0" stroke="#ffffff" stroke-width="8.0" fill="none" stroke-linecap="square"/>
+            <path d="M 250.0 170.0 L 250.0 230.0 M 240.0 170.0 L 260.0 170.0 M 240.0 230.0 L 260.0 230.0" stroke="#ffffff" stroke-width="8.0" fill="none" stroke-linecap="square"/>
+            <path d="M 280.0 230.0 L 280.0 170.0 L 310.0 170.0 M 280.0 198.0 L 305.0 198.0" stroke="#ffffff" stroke-width="8.0" fill="none" stroke-linecap="square"/>
+            <path d="M 325.0 170.0 L 365.0 170.0 M 345.0 170.0 L 345.0 230.0" stroke="#ffffff" stroke-width="8.0" fill="none" stroke-linecap="square"/>
+        </g>
+        
+        <text x="1620" y="220.0" font-family="system-ui, sans-serif" font-size="48" 
+              font-weight="900" fill="#fbbf24" text-anchor="end" letter-spacing="0.2em">
+            RIDE IT
+        </text>
+        
+</svg>
