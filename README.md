@@ -1,6 +1,6 @@
 # RIFT Bikes - Custom Bike Shop
 
-**For Simon Murray - Bikes for Charity**
+**Simon Murray - Bikes for Charity**
 
 Premium custom road bikes, locally assembled with a percentage of profits donated to local charities.
 
