@@ -22,6 +22,8 @@ export default function BikeDetailPage() {
   const [bike, setBike] = useState<Bike | null>(null);
   const [loading, setLoading] = useState(true);
   const [specs, setSpecs] = useState<any>(null);
+  const [holographicPaint, setHolographicPaint] = useState(false);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     if (bikeId) {
@@ -48,6 +50,7 @@ export default function BikeDetailPage() {
       }
       
       setBike(data);
+      setTotalPrice(data.basePrice);
       if (data.specifications) {
         try {
           setSpecs(JSON.parse(data.specifications));
@@ -61,6 +64,13 @@ export default function BikeDetailPage() {
       setBike(null);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleHolographicChange = (checked: boolean) => {
+    setHolographicPaint(checked);
+    if (bike) {
+      setTotalPrice(checked ? bike.basePrice + 250 : bike.basePrice);
     }
   };
 
@@ -190,9 +200,13 @@ export default function BikeDetailPage() {
             <p className="text-white/80 mb-6">{bike.description}</p>
             <div className="mb-6">
               <div className="text-4xl font-bold text-rift-gold mb-2">
-                £{bike.basePrice ? bike.basePrice.toLocaleString() : 'N/A'}
+                £{totalPrice.toLocaleString()}
               </div>
-              <div className="text-white/80 text-sm mb-4">✓ In Stock - Test Ride Available</div>
+              <div className="text-white/60 text-sm">
+                Base Price: £{bike.basePrice.toLocaleString()}
+                {holographicPaint && <span className="text-rift-gold"> + £250 (Holographic Paint)</span>}
+              </div>
+              <div className="text-white/80 text-sm mt-2 mb-4">✓ Available to Order - Test Ride Available</div>
             </div>
             
             {/* Paint Options */}
@@ -201,9 +215,11 @@ export default function BikeDetailPage() {
               <div className="space-y-2">
                 <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
                   <input
-                    type="checkbox"
-                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
+                    type="radio"
+                    name="paint"
+                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded-full focus:ring-rift-gold"
                     defaultChecked
+                    onChange={() => handleHolographicChange(false)}
                   />
                   <div className="flex-1">
                     <div className="text-white font-semibold text-sm">Standard Paint</div>
@@ -213,8 +229,10 @@ export default function BikeDetailPage() {
                 </label>
                 <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all bg-rift-royal/30 border border-rift-emerald/30 hover:border-rift-gold/50">
                   <input
-                    type="checkbox"
-                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded focus:ring-rift-gold"
+                    type="radio"
+                    name="paint"
+                    className="w-5 h-5 text-rift-gold bg-rift-royal border-rift-emerald rounded-full focus:ring-rift-gold"
+                    onChange={() => handleHolographicChange(true)}
                   />
                   <div className="flex-1">
                     <div className="text-white font-semibold text-sm">Holographic Paint</div>

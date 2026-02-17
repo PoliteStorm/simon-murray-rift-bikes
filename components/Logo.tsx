@@ -12,13 +12,13 @@ export default function Logo({ size = 'small' }: LogoProps) {
       <img
         src="/logo.jpg"
         alt="RIFT Logo"
-        className={isLarge ? "h-16 w-auto object-contain" : "h-10 w-auto max-h-10 object-contain"}
+        className={isLarge ? "h-20 w-auto object-contain" : "h-14 w-auto max-h-14 object-contain"}
         style={isLarge ? {
-          maxHeight: '64px',
+          maxHeight: '80px',
           height: 'auto',
           width: 'auto',
         } : {
-          maxHeight: '40px',
+          maxHeight: '56px',
           height: 'auto',
           width: 'auto',
         }}

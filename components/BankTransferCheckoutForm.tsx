@@ -85,7 +85,7 @@ export default function BankTransferCheckoutForm({
       <div className="bg-rift-royal/30 border border-rift-emerald/50 rounded-xl p-6">
         <h3 className="text-xl font-bold text-white mb-4">Contact Information</h3>
         <p className="text-white/70 text-sm mb-4">
-          Please provide your details. You will be contacted at <strong className="text-rift-gold">si@riftbike.com</strong> or <strong className="text-rift-gold">07817174391</strong> to arrange payment via bank transfer and discuss your custom bike specifications.
+          Please provide your details. You will be contacted at <strong className="text-rift-gold">riftbike@outlook.com</strong>, <strong className="text-rift-gold">WhatsApp: 07817174391</strong>, or <strong className="text-rift-gold">Phone: 01985-844563</strong> to arrange payment via bank transfer and discuss your custom bike specifications.
         </p>
         
         <div className="space-y-4">
@@ -172,7 +172,7 @@ export default function BankTransferCheckoutForm({
           <li>• Confirm delivery timeline</li>
         </ul>
         <p className="text-white/60 text-xs mt-3">
-          Contact: <strong>si@riftbike.com</strong> or <strong>07817174391</strong>
+          Contact: <strong>riftbike@outlook.com</strong> | <strong>WhatsApp: 07817174391</strong> | <strong>Phone: 01985-844563</strong>
         </p>
       </div>
 

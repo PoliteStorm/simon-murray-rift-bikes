@@ -49,7 +49,7 @@ function CheckoutContent() {
     );
   }
 
-  const deposit = Math.round(bike.basePrice * 0.1); // 10% deposit
+  const deposit = 500; // £500 fixed deposit
 
   return (
     <div className="flex-1 py-12 bg-rift-dark">

@@ -6,8 +6,9 @@ Premium custom road bikes, locally assembled with a percentage of profits donate
 
 ## Contact
 
-- **Email:** si@riftbike.com
-- **Phone:** 07817174391
+- **Email:** riftbike@outlook.com
+- **WhatsApp:** 07817174391
+- **Phone:** 01985-844563
 
 ## Features
 

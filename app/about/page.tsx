@@ -10,7 +10,7 @@ export default function AboutPage() {
             RIFT represents the pinnacle of road cycling technology, where premium craftsmanship meets innovative design.
           </p>
           <p className="text-white/80">
-            Each RIFT bike is meticulously assembled locally by our expert team, ensuring exceptional quality and attention to detail. Every bike features <strong className="text-rift-gold">Shimano Ultegra gears</strong> and is constructed with <strong className="text-rift-gold">aerospace-grade T1000 carbon fiber</strong>, delivering uncompromising performance and durability.
+            Each RIFT bike is meticulously assembled by our expert team, ensuring exceptional quality and attention to detail. Every bike features top quality carbon throughout the whole bike and often <strong className="text-rift-gold">T1000 aerospace carbon</strong> is used along with <strong className="text-rift-gold">Di2 electronic gears</strong>, and where possible <strong className="text-rift-gold">Shimano Ultegra gear set up</strong>. All bikes are complete with pedals, seat, and water bottle with carrier. Every bike is custom built just for you.
           </p>
           
           <div className="bg-rift-royal/20 border border-rift-gold/30 rounded-lg p-4 mt-4">
@@ -28,10 +28,11 @@ export default function AboutPage() {
               <ul className="space-y-2 ml-4">
                 <li>✓ <strong>Lifetime warranty on frame</strong> - Your RIFT frame is guaranteed for life against manufacturing defects</li>
                 <li>✓ <strong>1 year warranty on all other components</strong> - All components are covered for one year from purchase date</li>
-                <li>✓ <strong>Shimano Ultegra gears</strong> - Premium shifting performance as standard</li>
-                <li>✓ <strong>Aerospace-grade T1000 carbon</strong> - Lightweight, strong frame construction</li>
+                <li>✓ <strong>T1000 aerospace carbon</strong> - Top quality carbon throughout the whole bike for lightweight, strong construction</li>
+                <li>✓ <strong>Di2 electronic gears with Shimano Ultegra</strong> - Premium electronic shifting performance as standard</li>
+                <li>✓ <strong>Complete package</strong> - Includes pedals, seat, and water bottle with carrier</li>
                 <li>✓ <strong>Holographic paint option</strong> - Available with additional wait time for custom finish</li>
-                <li>✓ <strong>Local assembly</strong> - Expertly assembled by our team for quality assurance</li>
+                <li>✓ <strong>Custom built</strong> - Every bike is custom built just for you</li>
               </ul>
               <p className="text-sm text-white/60 mt-4">
                 Warranty covers manufacturing defects and material failures under normal use. Damage from accidents, misuse, or modifications may void warranty coverage.
@@ -46,9 +47,9 @@ export default function AboutPage() {
                 We operate on a deposit system to secure your order:
               </p>
               <ul className="space-y-2 ml-4">
-                <li>✓ <strong>Deposit required</strong> - A deposit secures your order and begins the assembly process</li>
+                <li>✓ <strong>£500 deposit required</strong> - A £500 deposit secures your order and begins the assembly process</li>
                 <li>✓ <strong>Bank transfer payment</strong> - Secure bank transfer payments accepted</li>
-                <li>✓ <strong>Order confirmation</strong> - Upon order confirmation, you will be contacted at <strong>si@riftbike.com</strong> or <strong>07817174391</strong> to arrange payment details and discuss any customization options</li>
+                <li>✓ <strong>Order confirmation</strong> - Upon order confirmation, you will be contacted at <strong>riftbike@outlook.com</strong>, <strong>WhatsApp: 07817174391</strong>, or <strong>Phone: 01985-844563</strong> to arrange payment details and discuss any customization options</li>
                 <li>✓ <strong>Balance payment</strong> - Remaining balance is due upon completion, prior to delivery</li>
               </ul>
               <p className="text-sm text-white/60 mt-4">

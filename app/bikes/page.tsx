@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
+import FlashingLogo from '@/components/FlashingLogo';
 
 interface Bike {
   id: number;
@@ -98,7 +99,8 @@ export default function BikesPage() {
   }
 
   return (
-    <div className="flex-1 py-12 bg-rift-dark">
+    <div className="flex-1 py-12 bg-rift-dark relative">
+      <FlashingLogo position="bottom-right" size="small" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-white mb-4">Shop Bikes</h1>
         <p className="text-white/80 mb-12">Explore our collection of premium road bikes.</p>
@@ -169,7 +171,7 @@ export default function BikesPage() {
                       <svg className="w-4 h-4 text-rift-gold" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      In Stock
+                      Available to Order
                     </span>
                   </div>
                 </div>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import PartnerLogos from '@/components/PartnerLogos';
+import FlashingLogo from '@/components/FlashingLogo';
 import { useEffect, useRef } from 'react';
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
 
   return (
     <div className="flex-1 bg-rift-dark relative overflow-hidden">
+      <FlashingLogo position="top-right" size="medium" />
+      <FlashingLogo position="bottom-left" size="small" />
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -49,8 +52,8 @@ export default function Home() {
                 }}
               />
             </div>
-            <p className="text-xl md:text-2xl text-white mb-12 drop-shadow-lg">
-              Premium Road Cycling. Locally Assembled.
+            <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-lg font-bold">
+              Losers look at winners - winners look at winning - be a winner with RiftBike
             </p>
             <div className="flex justify-center space-x-4">
               <Link href="/bikes" className="rift-button shadow-2xl">
