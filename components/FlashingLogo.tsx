@@ -44,7 +44,7 @@ export default function FlashingLogo({ position = 'top-right', size = 'medium' }
     >
       <div className="relative w-full h-full animate-pulse-glow">
         <img
-          src="/logo.jpg"
+          src="/red-logo.jpg"
           alt="RIFT Logo"
           className="w-full h-full object-contain drop-shadow-2xl"
           style={{
