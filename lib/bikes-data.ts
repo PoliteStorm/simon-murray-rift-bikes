@@ -22,5 +22,38 @@ export const initialBikes = [
     "specifications": "{\"model\":\"EM19\",\"specFile\":\"/home/tau/RIFT/new_bikes_extract/EM19-Specifications.xlsx\",\"images\":[\"/bikes/EM19/image-1.jpg\",\"/bikes/EM19/image-2.jpg\",\"/bikes/EM19/image-3.jpg\"],\"Bike Model\":\"EM19\",\"ConfRev\":\"M6100/12S+M820,HIGH\",\"Frame Size\":\"29(27.5)×16\\\" / 18\\\"\",\"Bike Color\":\"Black / DarkGray / DarkGreen\",\"Net Weight\":\"21.9KG\",\"Frame\":\"CYCTRAC, EM19, AM, High modulus Carbon fiber,Inner cables,Thru-axle12*148 Boost, UDH,145mm Travel, DNM air rear shox200*55\",\"Handelbar Sets\":\"RS, Alu alloy,Matte,Handlebar 31.8×720,Stem 45,Clamps 34.9mm,  Seat post RS Height-adjustable&Remote 31.6*100/125mm Travel\",\"Fork\":\"ROCKSHOX-35S, Air, Manual,160,Thru-axle 15*110\",\"Head Sets\":\"Inner-Cables routing, Sealed bearings 52*52mm\",\"Derailleur Lever\":\"SHIMANO  DEORE/M6100-12S\",\"Rear Derailleur\":\"SHIMANO  DEORE/M6100-12S\",\"Cranksets\":\"Matching with Mid Motor, 34T\",\"Cassettes\":\"SUNSHINE-12S,11-50T\",\"Chain\":\"SUMC-12S\",\"Brake\":\"TEKTRO-M535,  4-piston hydraulic disc, 203/203mm\",\"Hub\":\"RS, Alu alloy,4-sealed Bearings,HG,Disc,32Holes,Thru-axle F15×110_R12×148mm Boost\",\"Rim\":\"RS, Alu alloy with Double-wall&Rivets, W30×H21mm\",\"Spoke\":\"SHUNJIU, Circular 14G\",\"Tire\":\"MAXXIS,  29/27.5×2.4\\\"\",\"Grips\":\"Circular 22.2×120mm, PU leather&locking Ring\",\"Saddle\":\"RS, Comfortable and Thickened for MTB\",\"Pedals\":\"RS, Alu alloy&Skid resistant for MTB\",\"Motor System\":\"Bafang Mid, M820, 36V250W(48V250W)\",\"Max Torque\":\"85 Nm\",\"Speed Limit\":\"25KMh Default (max 45KMh)\",\"Pedal Sensor\":\"Torque+Speed(cadence)\",\"Battery\":\"Samsung 21700 Li-ion, 720Wh, 36V20A(48V15A)\",\"Endurance\":\"Max 130-150KM (pedal assist)\",\"Full charge time\":\"5-7 Hours\",\"Charger\":\"3A,  DC2.1\",\"HMI\":\"Bafang-C030,LCD digital(Built in Top tube), Bluetooth/BafangGo App\",\"Waterproof\":\"IP X6\",\"Max Load\":\"140 KG\"}",
     "category": "E-Mountain",
     "createdAt": "2026-01-23 13:47:59"
+  },
+  {
+    "id": 11,
+    "name": "RIFT ULTIMATE",
+    "description": "The ultimate performance road bike featuring T1000 aerospace carbon throughout, Di2 electronic gears with Shimano Ultegra setup. Complete with pedals, seat, and water bottle with carrier. Custom built just for you.",
+    "basePrice": 4500,
+    "imageUrl": "/bikes/rift-ultimate.jpg",
+    "videoUrl": "/bikes/rift-ultimate.mp4",
+    "specifications": "{\"frame\":\"T1000 Aerospace Carbon\",\"gears\":\"Shimano Ultegra Di2 Electronic\",\"wheels\":\"Carbon Wheelset\",\"brakes\":\"Hydraulic Disc\",\"weight\":\"Ultra-lightweight\",\"included\":\"Pedals, Seat, Water Bottle with Carrier\",\"images\":[\"/bikes/rift-ultimate.jpg\",\"/bikes/rift-ultimate-spec.jpeg\"],\"specSheetUrl\":\"/bikes/rift-ultimate-spec.jpeg\"}",
+    "category": "Road",
+    "createdAt": "2026-02-18 00:00:00"
+  },
+  {
+    "id": 12,
+    "name": "RIFT GRAVEL EXTREME",
+    "description": "Extreme gravel performance with T1000 aerospace carbon, Di2 electronic gears with Shimano Ultegra. Built for adventure on any terrain. Complete with pedals, seat, and water bottle with carrier. Custom built just for you.",
+    "basePrice": 4200,
+    "imageUrl": "/bikes/rift-gravel-extreme.jpg",
+    "videoUrl": null,
+    "specifications": "{\"frame\":\"T1000 Aerospace Carbon\",\"gears\":\"Shimano Ultegra Di2 Electronic\",\"wheels\":\"Gravel Wheelset\",\"brakes\":\"Hydraulic Disc\",\"tires\":\"All-terrain\",\"included\":\"Pedals, Seat, Water Bottle with Carrier\"}",
+    "category": "Gravel",
+    "createdAt": "2026-02-18 00:00:00"
+  },
+  {
+    "id": 13,
+    "name": "RIFT GRAVEL V3",
+    "description": "Gravel V3 wireless with T1000 aerospace carbon and Shimano 105 groupset. Built for mixed terrain and adventure. Complete with pedals, seat, and water bottle with carrier. Every bike is custom built just for you.",
+    "basePrice": 4100,
+    "imageUrl": "/bikes/rift-gravel-v3.jpg",
+    "videoUrl": "/bikes/rift-gravel-v3.mp4",
+    "specifications": "{\"model\":\"Gravel V3 wireless (25yr 105 big)\",\"frame\":\"T1000 Aerospace Carbon\",\"gears\":\"Shimano 105\",\"wheels\":\"Gravel Wheelset\",\"brakes\":\"Hydraulic Disc\",\"tires\":\"All-terrain\",\"included\":\"Pedals, Seat, Water Bottle with Carrier\",\"images\":[\"/bikes/rift-gravel-v3.jpg\",\"/bikes/rift-gravel-v3-2.jpg\"]}",
+    "category": "Gravel",
+    "createdAt": "2026-02-18 00:00:00"
   }
 ];

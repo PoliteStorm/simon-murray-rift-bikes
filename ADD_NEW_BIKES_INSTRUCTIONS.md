@@ -1,12 +1,14 @@
-# 🚲 Instructions to Add 2 New Bikes
+# 🚲 Instructions to Add 3 New Bikes
 
 ## What's Ready:
 ✅ Red logo image copied to `/public/red-logo.jpg`
 ✅ Flashing logo now uses the red logo
 ✅ Bike images copied:
-   - `/public/bikes/rift-ultimate.jpg`
-   - `/public/bikes/rift-gravel-extreme.jpg`
+   - `/public/bikes/rift-ultimate.jpg` (RIFT ULTIMATE)
+   - `/public/bikes/rift-gravel-extreme.jpg` (RIFT GRAVEL EXTREME)
+   - `/public/bikes/rift-gravel-v3.jpg` (RIFT GRAVEL V3 – from GRAVEL zip)
 ✅ Script ready to add bikes: `scripts/add-new-bikes.js`
+✅ All 3 bikes added to initialBikes fallback (same labelling and display)
 
 ---
 
@@ -24,8 +26,9 @@ node scripts/add-new-bikes.js
 ```
 
 This will add:
-1. **RIFT ULTIMATE** - £4,500
-2. **RIFT GRAVEL EXTREME** - £4,200
+1. **RIFT ULTIMATE** - £4,500 (Road)
+2. **RIFT GRAVEL EXTREME** - £4,200 (Gravel)
+3. **RIFT GRAVEL V3** - £4,100 (Gravel, model: Gravel V3 wireless 105)
 
 ---
 
@@ -65,6 +68,22 @@ If you have an admin panel on your site:
   - Tires: All-terrain
   - Included: Pedals, Seat, Water Bottle with Carrier
 
+#### RIFT GRAVEL V3 (3rd bike – from GRAVEL zip):
+- **Name:** RIFT GRAVEL V3
+- **Model:** Gravel V3 wireless (25yr 105 big)
+- **Price:** £4,100
+- **Category:** Gravel
+- **Image:** /bikes/rift-gravel-v3.jpg
+- **Description:** Gravel V3 wireless with T1000 aerospace carbon and Shimano 105 groupset. Built for mixed terrain and adventure. Complete with pedals, seat, and water bottle with carrier. Every bike is custom built just for you.
+- **Specifications:**
+  - Model: Gravel V3 wireless (25yr 105 big)
+  - Frame: T1000 Aerospace Carbon
+  - Gears: Shimano 105
+  - Wheels: Gravel Wheelset
+  - Brakes: Hydraulic Disc
+  - Tires: All-terrain
+  - Included: Pedals, Seat, Water Bottle with Carrier
+
 ---
 
 ### Option 3: Direct Database Insert (Advanced)
@@ -93,6 +112,17 @@ VALUES (
   'Gravel',
   '{"frame":"T1000 Aerospace Carbon","gears":"Shimano Ultegra Di2 Electronic","wheels":"Gravel Wheelset","brakes":"Hydraulic Disc","tires":"All-terrain","included":"Pedals, Seat, Water Bottle with Carrier"}'
 );
+
+-- Add RIFT GRAVEL V3 (3rd bike from GRAVEL zip)
+INSERT INTO bikes (name, description, basePrice, imageUrl, category, specifications)
+VALUES (
+  'RIFT GRAVEL V3',
+  'Gravel V3 wireless with T1000 aerospace carbon and Shimano 105 groupset. Built for mixed terrain and adventure. Complete with pedals, seat, and water bottle with carrier. Every bike is custom built just for you.',
+  4100,
+  '/bikes/rift-gravel-v3.jpg',
+  'Gravel',
+  '{"model":"Gravel V3 wireless (25yr 105 big)","frame":"T1000 Aerospace Carbon","gears":"Shimano 105","wheels":"Gravel Wheelset","brakes":"Hydraulic Disc","tires":"All-terrain","included":"Pedals, Seat, Water Bottle with Carrier"}'
+);
 ```
 
 ---
@@ -111,8 +141,8 @@ VALUES (
 1. **Push these new changes to GitHub** (I'll do this next)
 2. **Wait for Netlify to deploy**
 3. **Run the add-bikes script** OR add them manually
-4. **Check your website** - you should see 2 new bikes!
+4. **Check your website** - you should see 3 new bikes!
 
 ---
 
-**Note:** The bikes won't show up until you add them to the database using one of the methods above!
+**Note:** The bikes won't show up until you add them to the database using one of the methods above! (If the database is empty, the site uses initialBikes and all 3 new bikes are already included there with the same labelling and display.)
