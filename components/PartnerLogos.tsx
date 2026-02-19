@@ -94,12 +94,14 @@ export default function PartnerLogos({
   }
 
   if (variant === 'compact') {
+    // On mobile: first two logos (row 1) and right logo on row 2 (index 3) are larger
+    const isLargerOnMobile = (index: number) => [0, 1, 3].includes(index);
     return (
       <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8 py-4">
         {partnerLogos.map((logo, index) => (
           <div 
             key={index}
-            className="h-12 md:h-16 lg:h-20 flex items-center justify-center"
+            className={`flex items-center justify-center ${isLargerOnMobile(index) ? 'h-20 md:h-16 lg:h-20' : 'h-12 md:h-16 lg:h-20'}`}
             style={{ width: 'auto' }}
           >
             <img 
