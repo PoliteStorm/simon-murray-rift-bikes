@@ -27,7 +27,7 @@ export const initialBikes = [
     "id": 11,
     "name": "RIFT ULTIMATE",
     "description": "The ultimate performance road bike featuring T1000 aerospace carbon throughout, Di2 electronic gears with Shimano Ultegra setup. Complete with pedals, seat, and water bottle with carrier. Custom built just for you.",
-    "basePrice": 4500,
+    "basePrice": 4995,
     "imageUrl": "/bikes/rift-ultimate.jpg",
     "videoUrl": "/bikes/rift-ultimate.mp4",
     "specifications": "{\"frame\":\"T1000 Aerospace Carbon\",\"gears\":\"Shimano Ultegra Di2 Electronic\",\"wheels\":\"Carbon Wheelset\",\"brakes\":\"Hydraulic Disc\",\"weight\":\"Ultra-lightweight\",\"included\":\"Pedals, Seat, Water Bottle with Carrier\",\"images\":[\"/bikes/rift-ultimate.jpg\",\"/bikes/rift-ultimate-spec.jpeg\"],\"specSheetUrl\":\"/bikes/rift-ultimate-spec.jpeg\"}",
@@ -38,21 +38,10 @@ export const initialBikes = [
     "id": 12,
     "name": "RIFT GRAVEL EXTREME",
     "description": "Extreme gravel performance with T1000 aerospace carbon, Di2 electronic gears with Shimano Ultegra. Built for adventure on any terrain. Complete with pedals, seat, and water bottle with carrier. Custom built just for you.",
-    "basePrice": 4200,
-    "imageUrl": "/bikes/rift-gravel-extreme.jpg",
-    "videoUrl": null,
+    "basePrice": 4995,
+    "imageUrl": null,
+    "videoUrl": "/bikes/rift-gravel-extreme.mp4",
     "specifications": "{\"frame\":\"T1000 Aerospace Carbon\",\"gears\":\"Shimano Ultegra Di2 Electronic\",\"wheels\":\"Gravel Wheelset\",\"brakes\":\"Hydraulic Disc\",\"tires\":\"All-terrain\",\"included\":\"Pedals, Seat, Water Bottle with Carrier\"}",
-    "category": "Gravel",
-    "createdAt": "2026-02-18 00:00:00"
-  },
-  {
-    "id": 13,
-    "name": "RIFT GRAVEL V3",
-    "description": "Gravel V3 wireless with T1000 aerospace carbon and Shimano 105 groupset. Built for mixed terrain and adventure. Complete with pedals, seat, and water bottle with carrier. Every bike is custom built just for you.",
-    "basePrice": 4100,
-    "imageUrl": "/bikes/rift-gravel-v3.jpg",
-    "videoUrl": "/bikes/rift-gravel-v3.mp4",
-    "specifications": "{\"model\":\"Gravel V3 wireless (25yr 105 big)\",\"frame\":\"T1000 Aerospace Carbon\",\"gears\":\"Shimano 105\",\"wheels\":\"Gravel Wheelset\",\"brakes\":\"Hydraulic Disc\",\"tires\":\"All-terrain\",\"included\":\"Pedals, Seat, Water Bottle with Carrier\",\"images\":[\"/bikes/rift-gravel-v3.jpg\",\"/bikes/rift-gravel-v3-2.jpg\"]}",
     "category": "Gravel",
     "createdAt": "2026-02-18 00:00:00"
   }
