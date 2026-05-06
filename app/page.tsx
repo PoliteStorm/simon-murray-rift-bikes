@@ -38,20 +38,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
             <div className="flex items-center justify-center mb-10">
-              <img
-                src="/logo.jpg"
-                alt="RIFT Logo"
-                className="max-w-md w-full h-auto object-contain"
-                style={{
-                  maxWidth: '500px',
-                  width: '100%',
-                  height: 'auto',
-                }}
-              />
+              <span
+                className="text-rift-gold font-extrabold uppercase leading-none select-none text-7xl md:text-9xl tracking-[0.28em]"
+                style={{ textShadow: '0 0 24px rgba(251,191,36,0.35), 0 4px 12px rgba(0,0,0,0.6)' }}
+                aria-label="RIFT"
+              >
+                RIFT
+              </span>
             </div>
 
             {/* Signature tagline */}
-            <p className="font-serif italic text-rift-gold text-2xl md:text-4xl mb-4 tracking-wide drop-shadow-[0_2px_12px_rgba(251,191,36,0.35)]">
+            <p className="text-rift-gold text-xl md:text-3xl mb-4 tracking-[0.18em] uppercase font-medium drop-shadow-[0_2px_12px_rgba(251,191,36,0.35)]">
               Hand built just for you<span className="opacity-70">…</span>
             </p>
             <div className="mx-auto w-24 h-px bg-gradient-to-r from-transparent via-rift-gold to-transparent mb-8"></div>

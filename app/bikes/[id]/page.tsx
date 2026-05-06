@@ -24,7 +24,6 @@ export default function BikeDetailPage() {
   const [specs, setSpecs] = useState<any>(null);
   const [holographicPaint, setHolographicPaint] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
-  const [specSheetOpen, setSpecSheetOpen] = useState(false);
 
   useEffect(() => {
     if (bikeId) {
@@ -92,8 +91,6 @@ export default function BikeDetailPage() {
     );
   }
 
-  const specSheetUrl: string | undefined = specs?.specSheetUrl;
-
   return (
     <div className="flex-1 py-12 bg-rift-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -133,32 +130,6 @@ export default function BikeDetailPage() {
                 )}
               </div>
             </div>
-
-            {/* Spec sheet preview (clickable, opens lightbox) */}
-            {specSheetUrl && (
-              <button
-                type="button"
-                onClick={() => setSpecSheetOpen(true)}
-                className="rift-card overflow-hidden w-full block group hover:border-rift-gold transition-colors text-left"
-              >
-                <div className="aspect-[3/4] sm:aspect-video bg-rift-royal/40 relative">
-                  <img
-                    src={specSheetUrl}
-                    alt={`${bike.name} hand-written spec sheet`}
-                    className="w-full h-full object-contain"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-rift-dark/80 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                    <span className="text-rift-gold uppercase tracking-[0.18em] text-xs font-semibold">
-                      Hand-written spec sheet
-                    </span>
-                    <span className="text-white/80 text-xs group-hover:text-rift-gold transition-colors">
-                      Tap to enlarge
-                    </span>
-                  </div>
-                </div>
-              </button>
-            )}
           </div>
 
           {/* Bike Info */}
@@ -171,7 +142,7 @@ export default function BikeDetailPage() {
                 </span>
               )}
             </div>
-            <p className="font-serif italic text-rift-gold/90 text-sm mb-5">
+            <p className="text-rift-gold/90 text-xs tracking-[0.18em] uppercase font-medium mb-5">
               Hand built just for you<span className="opacity-70">…</span>
             </p>
             <p className="text-white/80 mb-6">{bike.description}</p>
@@ -260,34 +231,6 @@ export default function BikeDetailPage() {
                   );
                 })}
             </div>
-          </div>
-        )}
-
-        {/* Spec sheet lightbox */}
-        {specSheetOpen && specSheetUrl && (
-          <div
-            role="dialog"
-            aria-modal="true"
-            aria-label={`${bike.name} spec sheet`}
-            onClick={() => setSpecSheetOpen(false)}
-            className="fixed inset-0 z-50 bg-rift-dark/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fadeIn"
-          >
-            <button
-              type="button"
-              onClick={() => setSpecSheetOpen(false)}
-              aria-label="Close spec sheet"
-              className="absolute top-4 right-4 text-white/80 hover:text-rift-gold p-2"
-            >
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            <img
-              src={specSheetUrl}
-              alt={`${bike.name} spec sheet`}
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            />
           </div>
         )}
 

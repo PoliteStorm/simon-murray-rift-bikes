@@ -20,7 +20,7 @@ export default function ContactPage() {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="font-serif italic text-rift-gold text-lg md:text-xl tracking-wide mb-3">
+          <p className="text-rift-gold text-sm md:text-base tracking-[0.18em] uppercase font-medium mb-3">
             Hand built just for you<span className="opacity-70">…</span>
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">All Contact Info</h1>

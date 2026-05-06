@@ -102,7 +102,7 @@ export default function BikesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">The Range</h1>
-          <p className="font-serif italic text-rift-gold text-lg mb-2">Hand built just for you<span className="opacity-70">…</span></p>
+          <p className="text-rift-gold text-base mb-2 tracking-[0.18em] uppercase font-medium">Hand built just for you<span className="opacity-70">…</span></p>
           <div className="w-24 h-px bg-gradient-to-r from-rift-gold via-rift-gold/40 to-transparent mb-4"></div>
           <p className="text-white/70 max-w-2xl">Two carbon-framed machines, custom built in the UK. Choose the one that fits how you ride.</p>
         </div>
