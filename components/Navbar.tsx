@@ -3,8 +3,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import Logo from './Logo';
-import InfoBanner from './InfoBanner';
 
 const navLinks = [
   { href: '/bikes', label: 'Bikes' },
@@ -22,8 +20,11 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
-                <Logo />
+              <Link
+                href="/"
+                className="text-rift-gold/90 hover:text-rift-gold text-xs sm:text-sm tracking-[0.18em] uppercase font-medium transition-colors"
+              >
+                Hand built just for you<span className="opacity-70">…</span>
               </Link>
             </div>
 
@@ -102,7 +103,6 @@ export default function Navbar() {
           )}
         </div>
       </nav>
-      <InfoBanner />
       <div className="bg-rift-gold text-rift-dark py-2 text-center font-semibold text-sm">
         🚚 Free delivery within 50 miles of BA11
       </div>
