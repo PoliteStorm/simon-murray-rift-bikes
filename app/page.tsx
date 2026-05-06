@@ -38,13 +38,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
             <div className="flex items-center justify-center mb-10">
-              <span
-                className="text-rift-gold font-extrabold uppercase leading-none select-none text-7xl md:text-9xl tracking-[0.28em]"
-                style={{ textShadow: '0 0 24px rgba(251,191,36,0.35), 0 4px 12px rgba(0,0,0,0.6)' }}
-                aria-label="RIFT"
-              >
-                RIFT
-              </span>
+              <img
+                src="/logo.jpg"
+                alt="RIFT Logo"
+                className="max-w-md w-full h-auto object-contain"
+                style={{
+                  maxWidth: '500px',
+                  width: '100%',
+                  height: 'auto',
+                }}
+              />
             </div>
 
             {/* Signature tagline */}
