@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
-import FlashingLogo from '@/components/FlashingLogo';
 
 interface Bike {
   id: number;
@@ -100,10 +99,13 @@ export default function BikesPage() {
 
   return (
     <div className="flex-1 py-12 bg-rift-dark relative">
-      <FlashingLogo position="bottom-right" size="small" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-white mb-4">Shop Bikes</h1>
-        <p className="text-white/80 mb-12">Explore our collection of premium road bikes.</p>
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">The Range</h1>
+          <p className="font-serif italic text-rift-gold text-lg mb-2">Hand built just for you<span className="opacity-70">…</span></p>
+          <div className="w-24 h-px bg-gradient-to-r from-rift-gold via-rift-gold/40 to-transparent mb-4"></div>
+          <p className="text-white/70 max-w-2xl">Two carbon-framed machines, custom built in the UK. Choose the one that fits how you ride.</p>
+        </div>
         
         {bikes.length === 0 ? (
           <div className="text-center py-12">
@@ -111,7 +113,7 @@ export default function BikesPage() {
             <p className="text-white/40">Videos and images will be added once bikes are built.</p>
           </div>
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {bikes.map((bike) => (
               <Link key={bike.id} href={`/bikes/${bike.id}`} className="rift-card overflow-hidden hover:border-rift-gold transition-all duration-300 transform hover:scale-[1.02] block group">
                 <div className="aspect-video bg-gradient-to-br from-rift-royal to-emerald-950 flex items-center justify-center overflow-hidden">

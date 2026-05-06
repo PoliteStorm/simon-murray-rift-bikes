@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import PartnerLogos from '@/components/PartnerLogos';
-import FlashingLogo from '@/components/FlashingLogo';
 import { useEffect, useRef } from 'react';
 
 export default function Home() {
@@ -18,8 +17,6 @@ export default function Home() {
 
   return (
     <div className="flex-1 bg-rift-dark relative overflow-hidden">
-      <FlashingLogo position="top-right" size="medium" />
-      <FlashingLogo position="bottom-left" size="small" />
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -40,7 +37,7 @@ export default function Home() {
       <section className="relative z-10 bg-gradient-to-b from-rift-dark/40 via-transparent to-rift-dark/40 py-32 flex-1 flex items-center min-h-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
-            <div className="flex items-center justify-center mb-12">
+            <div className="flex items-center justify-center mb-10">
               <img
                 src="/logo.jpg"
                 alt="RIFT Logo"
@@ -52,12 +49,22 @@ export default function Home() {
                 }}
               />
             </div>
-            <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-lg font-bold">
-              Losers look at winners - winners look at winning - be a winner with RiftBike
+
+            {/* Signature tagline */}
+            <p className="font-serif italic text-rift-gold text-2xl md:text-4xl mb-4 tracking-wide drop-shadow-[0_2px_12px_rgba(251,191,36,0.35)]">
+              Hand built just for you<span className="opacity-70">…</span>
             </p>
-            <div className="flex justify-center space-x-4">
+            <div className="mx-auto w-24 h-px bg-gradient-to-r from-transparent via-rift-gold to-transparent mb-8"></div>
+
+            <p className="text-lg md:text-xl text-white/90 mb-10 drop-shadow-lg font-semibold max-w-3xl mx-auto">
+              Losers look at winners — winners look at winning. Be a winner with RiftBike.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
               <Link href="/bikes" className="rift-button shadow-2xl">
                 Shop Bikes
+              </Link>
+              <Link href="/contact" className="rift-button-secondary shadow-2xl">
+                Talk to Simon
               </Link>
             </div>
           </div>
