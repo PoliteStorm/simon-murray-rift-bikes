@@ -58,17 +58,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="border-t border-rift-emerald pt-6">
-            <h2 className="text-2xl font-bold text-rift-gold mb-4">Giving Back</h2>
-            <div className="text-white/80 space-y-3">
-              <p>
-                At RIFT, we believe in supporting our local community. A percentage of our profits is donated to local charities, helping to make a positive impact in the areas where we operate.
-              </p>
-              <p className="text-sm text-white/60">
-                By choosing RIFT, you're not just investing in a premium bike - you're also contributing to charitable causes that support our local community.
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Partner Logos */}

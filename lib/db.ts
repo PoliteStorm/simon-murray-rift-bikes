@@ -29,20 +29,6 @@ export async function openDatabase() {
       createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
     );
 
-    CREATE TABLE IF NOT EXISTS test_drives (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      bikeId INTEGER,
-      name TEXT NOT NULL,
-      email TEXT NOT NULL,
-      phone TEXT NOT NULL,
-      preferredDate TEXT NOT NULL,
-      preferredTime TEXT NOT NULL,
-      message TEXT,
-      status TEXT DEFAULT 'pending',
-      createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-      FOREIGN KEY (bikeId) REFERENCES bikes(id)
-    );
-
     CREATE TABLE IF NOT EXISTS orders (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       bikeId INTEGER,

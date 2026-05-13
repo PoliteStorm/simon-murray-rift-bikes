@@ -154,7 +154,7 @@ export default function BikeDetailPage() {
                 Base Price: £{bike.basePrice.toLocaleString()}
                 {holographicPaint && <span className="text-rift-gold"> + £250 (Holographic Paint)</span>}
               </div>
-              <div className="text-white/80 text-sm mt-2 mb-4">✓ Available to Order — Test Ride Available</div>
+              <div className="text-white/80 text-sm mt-2 mb-4">✓ Available to Order</div>
             </div>
 
             {/* Paint Options */}
@@ -224,9 +224,12 @@ export default function BikeDetailPage() {
                     .replace(/^./, (str) => str.toUpperCase())
                     .trim();
                   return (
-                    <div key={key} className="border-b border-rift-emerald/30 pb-3">
-                      <div className="text-rift-gold font-semibold text-sm mb-1">{displayKey}</div>
-                      <div className="text-white/80 text-sm">{String(value)}</div>
+                    <div key={key} className="border-b border-rift-emerald/30 pb-3 flex items-start gap-2">
+                      <span className="text-rift-gold mt-0.5">✓</span>
+                      <div>
+                        <div className="text-rift-gold font-semibold text-sm mb-1">{displayKey}</div>
+                        <div className="text-white/80 text-sm">{String(value)}</div>
+                      </div>
                     </div>
                   );
                 })}

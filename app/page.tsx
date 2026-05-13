@@ -39,11 +39,11 @@ export default function Home() {
           <div className="text-center">
             <div className="flex items-center justify-center mb-10">
               <img
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="RIFT Logo"
-                className="max-w-md w-full h-auto object-contain"
+                className="w-full h-auto object-contain"
                 style={{
-                  maxWidth: '500px',
+                  maxWidth: '700px',
                   width: '100%',
                   height: 'auto',
                 }}
@@ -56,10 +56,7 @@ export default function Home() {
             </p>
             <div className="mx-auto w-24 h-px bg-gradient-to-r from-transparent via-rift-gold to-transparent mb-8"></div>
 
-            <p className="text-lg md:text-xl text-white/90 mb-10 drop-shadow-lg font-semibold max-w-3xl mx-auto">
-              Losers look at winners — winners look at winning. Be a winner with RiftBike.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 mt-10">
               <Link href="/bikes" className="rift-button shadow-2xl">
                 Shop Bikes
               </Link>
