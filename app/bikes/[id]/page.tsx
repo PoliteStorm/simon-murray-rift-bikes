@@ -38,17 +38,15 @@ export default function BikeDetailPage() {
         throw new Error(`Failed to fetch bike: ${response.status}`);
       }
       const data = await response.json();
-      
-      // Check if response is an error object
+
       if (data.error) {
         throw new Error(data.error);
       }
-      
-      // Ensure required fields exist
+
       if (!data || !data.name || data.basePrice === undefined) {
         throw new Error('Invalid bike data received');
       }
-      
+
       setBike(data);
       setTotalPrice(data.basePrice);
       if (data.specifications) {
@@ -93,45 +91,19 @@ export default function BikeDetailPage() {
     );
   }
 
-  const isRiftRapid = bike.name === 'RIFT Rapid' || bike.name === 'Rift Rapid';
-  const isRiftClimb = bike.name === 'RIFT Climb';
-
   return (
     <div className="flex-1 py-12 bg-rift-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link href="/bikes" className="text-rift-gold hover:text-yellow-400 mb-6 inline-block">
           ← Back to Bikes
         </Link>
-        
+
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Image/Video Gallery */}
           <div className="space-y-4">
-            {/* Main Image/Video */}
             <div className="rift-card overflow-hidden">
               <div className="aspect-square bg-gradient-to-br from-rift-royal to-emerald-950 flex items-center justify-center relative">
-                {/* For RIFT Climb: Always show video if available, no images */}
-                {isRiftClimb && bike.videoUrl ? (
-                  <video
-                    key={bike.id}
-                    className="w-full h-full object-cover"
-                    controls
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    style={{ maxHeight: '100%', maxWidth: '100%' }}
-                    onError={(e) => {
-                      console.error('Video failed to load:', bike.videoUrl, e);
-                    }}
-                    onLoadStart={() => {
-                      console.log('Video loading:', bike.videoUrl);
-                    }}
-                  >
-                    <source src={bike.videoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ) : bike.videoUrl && !isRiftClimb ? (
-                  /* For other bikes: Show video if available */
+                {bike.videoUrl ? (
                   <video
                     key={bike.id}
                     className="w-full h-full object-cover"
@@ -144,16 +116,9 @@ export default function BikeDetailPage() {
                   >
                     <source src={bike.videoUrl} type="video/mp4" />
                   </video>
-                ) : bike.imageUrl && !isRiftClimb ? (
-                  /* For other bikes: Show image if no video */
-                  <>
-                    <img src={bike.imageUrl} alt={bike.name} className="w-full h-full object-contain" />
-                    {isRiftRapid && (
-                      <div className="absolute top-4 right-4 w-16 h-16 bg-white z-10"></div>
-                    )}
-                  </>
+                ) : bike.imageUrl ? (
+                  <img src={bike.imageUrl} alt={bike.name} className="w-full h-full object-contain" />
                 ) : (
-                  /* Placeholder if no media */
                   <div className="text-center p-8">
                     <div className="w-32 h-32 border-2 border-rift-gold/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                       <svg className="w-16 h-16 text-rift-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,38 +130,21 @@ export default function BikeDetailPage() {
                 )}
               </div>
             </div>
-            
-            {/* Image Gallery Thumbnails */}
-            {specs && specs.images && Array.isArray(specs.images) && specs.images.length > 1 && !isRiftRapid && !isRiftClimb && (
-              <div className="grid grid-cols-3 gap-2">
-                {specs.images.slice(0, 6).map((img: string, idx: number) => (
-                  <div key={idx} className="rift-card overflow-hidden aspect-square cursor-pointer hover:border-rift-gold transition-all">
-                    <img src={img} alt={`${bike.name} ${idx + 1}`} className="w-full h-full object-cover" />
-                  </div>
-                ))}
-              </div>
-            )}
-            {/* For Rift Rapid, only show first image with white overlay */}
-            {isRiftRapid && specs && specs.images && Array.isArray(specs.images) && specs.images.length > 0 && (
-              <div className="grid grid-cols-3 gap-2">
-                <div className="rift-card overflow-hidden aspect-square cursor-pointer hover:border-rift-gold transition-all relative">
-                  <img src={specs.images[0]} alt={`${bike.name} 1`} className="w-full h-full object-cover" />
-                  <div className="absolute top-2 right-2 w-12 h-12 bg-white z-10"></div>
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Bike Info */}
           <div className="rift-card p-8">
-            <div className="flex items-center justify-between mb-4">
-              <h1 className="text-3xl font-bold text-white">{bike.name}</h1>
+            <div className="flex items-center justify-between mb-2">
+              <h1 className="text-3xl font-bold text-white tracking-tight">{bike.name}</h1>
               {bike.category && (
                 <span className="text-sm bg-rift-gold/20 text-rift-gold px-3 py-1 rounded-full border border-rift-gold/30">
                   {bike.category}
                 </span>
               )}
             </div>
+            <p className="text-rift-gold/90 text-xs tracking-[0.18em] uppercase font-medium mb-5">
+              Hand built just for you<span className="opacity-70">…</span>
+            </p>
             <p className="text-white/80 mb-6">{bike.description}</p>
             <div className="mb-6">
               <div className="text-4xl font-bold text-rift-gold mb-2">
@@ -206,9 +154,9 @@ export default function BikeDetailPage() {
                 Base Price: £{bike.basePrice.toLocaleString()}
                 {holographicPaint && <span className="text-rift-gold"> + £250 (Holographic Paint)</span>}
               </div>
-              <div className="text-white/80 text-sm mt-2 mb-4">✓ Available to Order - Test Ride Available</div>
+              <div className="text-white/80 text-sm mt-2 mb-4">✓ Available to Order</div>
             </div>
-            
+
             {/* Paint Options */}
             <div className="mb-6">
               <h3 className="text-lg font-bold text-white mb-3">Paint Options</h3>
@@ -223,7 +171,7 @@ export default function BikeDetailPage() {
                   />
                   <div className="flex-1">
                     <div className="text-white font-semibold text-sm">Standard Paint</div>
-                    <div className="text-white/60 text-xs">Included - Immediate availability</div>
+                    <div className="text-white/60 text-xs">Included — Immediate availability</div>
                   </div>
                   <div className="text-rift-gold font-bold text-sm">£0</div>
                 </label>
@@ -236,7 +184,7 @@ export default function BikeDetailPage() {
                   />
                   <div className="flex-1">
                     <div className="text-white font-semibold text-sm">Holographic Paint</div>
-                    <div className="text-white/60 text-xs">Premium color-shifting finish - Additional wait time required</div>
+                    <div className="text-white/60 text-xs">Premium colour-shifting finish — additional wait time required</div>
                   </div>
                   <div className="text-rift-gold font-bold text-sm">+£250</div>
                 </label>
@@ -247,15 +195,18 @@ export default function BikeDetailPage() {
                 </p>
               </div>
             </div>
-            
+
             <div className="space-y-3 mb-6">
               <Link href={`/checkout?bikeId=${bike.id}`} className="block w-full rift-button text-center">
                 Order Now
               </Link>
+              <Link href="/contact" className="block w-full rift-button-secondary text-center">
+                Talk to Simon First
+              </Link>
             </div>
             <div className="text-white/60 text-sm space-y-1">
               <p>Standard paint bikes ship immediately.</p>
-              <p>Holographic paint option available - additional wait time applies.</p>
+              <p>Holographic paint option available — additional wait time applies.</p>
             </div>
           </div>
         </div>
@@ -266,18 +217,19 @@ export default function BikeDetailPage() {
             <h2 className="text-2xl font-bold text-white mb-6">Specifications</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {Object.entries(specs)
-                .filter(([key]) => key !== 'specFile' && key !== 'model' && key !== 'images' && key !== 'undefined')
+                .filter(([key]) => !['specFile', 'model', 'images', 'undefined', 'specSheetUrl'].includes(key))
                 .map(([key, value]) => {
                   const displayKey = key
                     .replace(/([A-Z])/g, ' $1')
-                    .replace(/^./, str => str.toUpperCase())
+                    .replace(/^./, (str) => str.toUpperCase())
                     .trim();
                   return (
-                    <div key={key} className="border-b border-rift-emerald/30 pb-3">
-                      <div className="text-rift-gold font-semibold text-sm mb-1">
-                        {displayKey}
+                    <div key={key} className="border-b border-rift-emerald/30 pb-3 flex items-start gap-2">
+                      <span className="text-rift-gold mt-0.5">✓</span>
+                      <div>
+                        <div className="text-rift-gold font-semibold text-sm mb-1">{displayKey}</div>
+                        <div className="text-white/80 text-sm">{String(value)}</div>
                       </div>
-                      <div className="text-white/80 text-sm">{String(value)}</div>
                     </div>
                   );
                 })}
@@ -293,4 +245,3 @@ export default function BikeDetailPage() {
     </div>
   );
 }
-
