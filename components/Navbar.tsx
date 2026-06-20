@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from './Logo';
-import InfoBanner from './InfoBanner';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -27,6 +26,9 @@ export default function Navbar() {
               <Link href="/about" className="text-white hover:text-rift-gold transition-colors">
                 About
               </Link>
+              <Link href="/contact" className="text-white hover:text-rift-gold transition-colors">
+                Contact
+              </Link>
               <Link href="/cart" className="text-white hover:text-rift-gold transition-colors">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -36,8 +38,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      {/* Info Banner with expandable sections */}
-      <InfoBanner />
       {/* Delivery Banner */}
       <div className="bg-rift-gold text-rift-dark py-2 text-center font-semibold text-sm">
         🚚 Free delivery within 50 miles of BA11
